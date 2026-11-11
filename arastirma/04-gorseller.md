@@ -158,3 +158,21 @@ Listeden çıkarılanlar (indirilmedi): Klaus Schwab, Alan Kay, Fei-Fei Li, Kevi
   - Kırmızı: **#BE1924** (`--accent`, `--color-gold`, `--app-primary`). Koyu tonu `#a3151f`. Logo SVG'sindeki kırmızı #BD1823, yani neredeyse aynı.
   - Krem zemin: #FCFBF9 / #F5F1ED. Logo siyahı: #1D1D1B.
   - Site yazı tipi: "Google Sans Flex".
+
+---
+
+## E. v4'te (11 Kasım 2026) sunumda kullanılan portreler
+
+Ayrıntılı künye (Commons sayfası, çekim tarihi, boyut): `07-tahminler-ve-portreler.md`, C bölümü. Slaytlardaki atıf satırları:
+
+| Slayt | Dosya | Yazar · lisans |
+|---|---|---|
+| 11 Elektrik dersi (küçük portre) | `andrew-ng.jpg` | TechCrunch (Steve Jennings) · CC BY 2.0 |
+| 15 Ara → Sor → Yaptır (küçük portre) | `satya-nadella.jpg` | Brian Smale / Microsoft · CC BY-SA 4.0 |
+| 18 Bill Gates | `bill-gates.jpg` | Avrupa Parlamentosu · CC BY 4.0 · kırpıldı |
+| 19 Jensen Huang | `jensen-huang-buyuk.jpg` + arka plan `jensen-huang-ces2025-sahne.jpg` | Maurizio Pesce · CC BY 2.0 · kırpıldı · Pronoia · CC0 |
+| 21 Demis Hassabis | `demis-hassabis.jpg` | Jay Dixit · CC BY-SA 4.0 · kırpıldı |
+| 22 Kardaşev ölçeği | `nikolai-kardashev.jpg` | Woodruff T. Sullivan III, NRAO/AUI Archives · CC BY 4.0 |
+| 24 Jeff Bezos | `jeff-bezos-buyuk.jpg` | Seattle City Council · CC BY 2.0 · kırpıldı |
+
+Klasörde olup sunumda kullanılmayan yedekler: `sam-altman.jpg`, `daron-acemoglu.jpg`, `tobi-lutke.jpg`, `ray-kurzweil.jpg`.

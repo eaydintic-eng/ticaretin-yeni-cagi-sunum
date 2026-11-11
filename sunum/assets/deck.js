@@ -23,14 +23,22 @@
   if (PREVIEW) body.classList.add('hide-ui');
 
   /* ---------- hazırlık ---------- */
+  // bölümler: her slayt data-sec="1..5" taşır; üstte bölüm göstergesi, altta logolar ve sayfa no
+  const SECS = ['Geçmiş', 'Hızlanma ve geçiş', 'Bugün: ajanlar', 'Gelecek', 'Yol haritası'];
   slides.forEach((s, i) => {
     s.dataset.index = i;
-    // altbilgi sayfa no
-    if (!s.classList.contains('no-foot')) {
-      const f = document.createElement('div');
-      f.className = 'foot';
-      f.innerHTML = `<span class="pg">${String(i + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}</span>`;
-      s.appendChild(f);
+    if (!s.classList.contains('no-chrome')) {
+      const sec = +(s.dataset.sec || 0);
+      if (sec) {
+        const top = document.createElement('div');
+        top.className = 'chrome-top';
+        top.innerHTML = SECS.map((t, k) => `<span class="sec${k + 1 === sec ? ' on' : (k + 1 < sec ? ' done' : '')}"><span class="n">0${k + 1}</span>${t}</span>`).join('<span class="dash"></span>');
+        s.appendChild(top);
+      }
+      const bot = document.createElement('div');
+      bot.className = 'chrome-bot';
+      bot.innerHTML = `<span class="lg"><img class="y" src="assets/logo/yeniad-logo-beyaz.svg" alt="YENİAD"><i></i><img class="b" src="assets/logo/bss-logo-white.svg" alt="BSS Teknoloji"></span><span class="pg">${String(i + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}</span>`;
+      s.appendChild(bot);
     }
     // satır satır başlıklar: <h class="lines"><span>..</span></h>
     s.querySelectorAll('.lines').forEach(el => {
@@ -257,7 +265,7 @@ button:hover{background:#2f5373}
     if (!speaker || speaker.closed) return;
     const d = speaker.document;
     d.getElementById('el').textContent = t0 ? mmss(Date.now() - t0) : '00:00';
-    d.getElementById('el').classList.toggle('warn', t0 && Date.now() - t0 > 18 * 60 * 1000);
+    d.getElementById('el').classList.toggle('warn', t0 && Date.now() - t0 > 20 * 60 * 1000);
     d.getElementById('sl').textContent = mmss(Date.now() - slideT0);
     d.getElementById('now').textContent = new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
   }

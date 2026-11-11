@@ -1,0 +1,7 @@
+# Ham görsel arşivi (≈95 MB, sunumda kullanılmayan adaylar) depoya alınmaz
+arastirma/gorsel-arsiv/
+# Geçici dosyalar
+*.tmp
+_notes.html
+Thumbs.db
+desktop.ini

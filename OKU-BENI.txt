@@ -1,12 +1,14 @@
 TİCARETİN YENİ ÇAĞI · Halil Aydın · YENİAD, 12 Kasım 2026, 09.00
 =====================================================================
+Sürüm 4 · 25 slayt · yaklaşık 20 dakika · 5 bölüm:
+01 Geçmiş · 02 Hızlanma ve geçiş · 03 Bugün: ajanlar · 04 Gelecek · 05 Yol haritası
 
 USB'YE NE KOPYALANIR?
   Bu klasörün tamamı (ha.sunum). En azından şunlar:
     sunum\                       → sunumun kendisi (index.html + assets)
     SUNUMU-BASLAT.cmd            → çift tıkla, tam ekran açılır
     pdf\                         → yedek PDF + yazdırılabilir konuşmacı notları
-  İnternet GEREKMEZ. Fontlar ve görseller klasörün içinde.
+  İnternet GEREKMEZ. Fontlar, görseller ve grafik verileri klasörün içinde.
 
 AÇMAK
   1) SUNUMU-BASLAT.cmd dosyasına çift tıklayın (Chrome, yoksa Edge'de tam ekran açar).
@@ -19,10 +21,11 @@ TUŞLAR (sunum tıklayıcısı da çalışır)
   Tam ekran ........ F  (ya da F5)       Çıkış: Esc
   Konuşmacı notları  S  (ayrı pencere: notlar, süre sayacı, saat, sıradaki slayt)
   Ekranı karart .... B  ya da  .  (tekrar basınca geri gelir)
-  Slayta git ....... numara + Enter  (ör. 1 5 Enter → 15. slayt)
+  Slayta git ....... numara + Enter  (ör. 1 4 Enter → 14. slayt)
   İlk / son slayt .. Home / End
 
   Bazı slaytlarda içerik tıkladıkça açılır (konuşmacı penceresinde "Adım 1/3" yazar).
+  14. slayt (Bir ajan nasıl çalışır?) 6 tıkla adım adım ilerler.
 
 İKİ EKRANLA SUNUM (önerilen)
   1) Bilgisayarı projeksiyona bağlayın, Windows + P → "Genişlet".
@@ -36,5 +39,7 @@ SORUN OLURSA
 
 DÜZENLEME
   Metinler sunum\index.html içinde, her slayt bir <section> bloğu. Konuşmacı notları <aside class="notes"> içinde.
-  Görsel künyeleri ve lisanslar: arastirma\04-gorseller.md
-  Kaynaklar: arastirma\01-alintilar.md (alıntılar), arastirma\02-veriler.md (rakamlar)
+  Grafik verileri: sunum\assets\data.js (ham dosyalar: arastirma\veri\)
+  Fontlar: Montserrat (başlıklar) ve Inter (metin), SIL Open Font License.
+  Kaynaklar: arastirma\01-alintilar.md, 02-veriler.md, 06-grafik-verileri.md, 07-tahminler-ve-portreler.md
+  Görsel künyeleri ve lisanslar: arastirma\04-gorseller.md ve 07-tahminler-ve-portreler.md

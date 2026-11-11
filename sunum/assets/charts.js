@@ -45,8 +45,16 @@
     // bant / bölge
     (cfg.bands || []).forEach(b => {
       const r = el('rect', { x: sx(b.x0), y: P.t, width: sx(b.x1) - sx(b.x0), height: H - P.b - P.t, fill: b.fill || 'rgba(239,91,91,.07)', class: 'ann' }, svg);
-      r.style.setProperty('--d', (b.d || 0.2) + 's');
+      r.style.setProperty('--d', (b.d || 0.2) + 's'); r.style.fill = b.fill || 'rgba(239,91,91,.07)';
       if (b.text) { const t = el('text', { x: sx(b.x0) + 12, y: P.t + 26, class: 'ann' }, svg); t.textContent = b.text; t.style.setProperty('--d', (b.d || 0.2) + 's'); if (b.color) t.setAttribute('fill', b.color); }
+    });
+
+    // yatay referans çizgisi: {y, text, color, d}
+    (cfg.hlines || []).forEach(h => {
+      const l = el('line', { x1: P.l, x2: W - P.r, y1: sy(h.y), y2: sy(h.y), class: 'ann-line', style: 'stroke-dasharray:8 8;stroke-width:2' }, svg);
+      l.style.setProperty('--d', (h.d || .2) + 's');
+      if (h.color) l.style.stroke = h.color;
+      if (h.text) { const t = el('text', { x: P.l + 10, y: sy(h.y) - 12, class: 'ann', fill: h.color || null, 'font-weight': 600 }, svg); t.textContent = h.text; t.style.setProperty('--d', (h.d || .2) + 's'); }
     });
 
     cfg.series.forEach((s, k) => {
@@ -86,10 +94,10 @@
       if (a.line) { const l = el('line', { x1: X, y1: Y, x2: X + (a.dx || 0), y2: Y + (a.dy || 0) + (a.dy < 0 ? 10 : -22), class: 'ann-line' }, svg); l.style.setProperty('--d', (a.d || 1.6) + 's'); }
       const lines = String(a.text).split('\n');
       lines.forEach((ln, i) => {
-        const t = el('text', { x: X + (a.dx || 0), y: Y + (a.dy || 0) + i * 24, 'text-anchor': a.anchor || 'start', class: 'ann', fill: a.color || null, 'font-weight': a.bold && i === 0 ? 700 : null }, svg);
-        t.textContent = ln; t.style.setProperty('--d', (a.d || 1.6) + 's');
+        const t = el('text', { x: X + (a.dx || 0), y: Y + (a.dy || 0) + i * (a.lh || 24), 'text-anchor': a.anchor || 'start', class: 'ann' + (a.cls ? ' ' + a.cls : ''), fill: a.color || null, 'font-weight': a.bold && i === 0 ? 700 : null }, svg);
+        t.textContent = ln; t.style.setProperty('--d', (a.d || 1.6) + 's'); if (a.color) t.style.fill = a.color;
       });
-      if (a.dot) { const c = el('circle', { cx: X, cy: Y, r: 8, fill: a.color || C.coral, class: 'pt', stroke: '#0F1E2C', 'stroke-width': 3 }, svg); c.style.setProperty('--d', (a.d || 1.6) + 's'); }
+      if (a.dot) { const c = el('circle', { cx: X, cy: Y, r: a.r || 8, fill: a.color || C.coral, class: 'pt', stroke: '#0F1E2C', 'stroke-width': 3 }, svg); c.style.setProperty('--d', (a.d || 1.6) + 's'); }
     });
     return svg;
   }

@@ -1,6 +1,6 @@
 TİCARETİN YENİ ÇAĞI · Halil Aydın · YENİAD, 12 Kasım 2026, 09.00
 =====================================================================
-Sürüm 4 · 25 slayt · yaklaşık 20 dakika · 5 bölüm:
+Sürüm 5 · 20 slayt · yaklaşık 15 dakika + soru-cevap · 5 bölüm:
 01 Geçmiş · 02 Hızlanma ve geçiş · 03 Bugün: ajanlar · 04 Gelecek · 05 Yol haritası
 
 USB'YE NE KOPYALANIR?
@@ -21,11 +21,11 @@ TUŞLAR (sunum tıklayıcısı da çalışır)
   Tam ekran ........ F  (ya da F5)       Çıkış: Esc
   Konuşmacı notları  S  (ayrı pencere: notlar, süre sayacı, saat, sıradaki slayt)
   Ekranı karart .... B  ya da  .  (tekrar basınca geri gelir)
-  Slayta git ....... numara + Enter  (ör. 1 4 Enter → 14. slayt)
+  Slayta git ....... numara + Enter  (ör. 1 2 Enter → 12. slayt)
   İlk / son slayt .. Home / End
 
   Bazı slaytlarda içerik tıkladıkça açılır (konuşmacı penceresinde "Adım 1/3" yazar).
-  14. slayt (Bir ajan nasıl çalışır?) 6 tıkla adım adım ilerler.
+  12. slayt (Bir ajan nasıl çalışır?) 6 tıkla adım adım ilerler.
 
 İKİ EKRANLA SUNUM (önerilen)
   1) Bilgisayarı projeksiyona bağlayın, Windows + P → "Genişlet".

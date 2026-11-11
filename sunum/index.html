@@ -55,7 +55,7 @@
   </div>
   <aside class="notes"><ul>
     <li>Selam ve teşekkür. Kendinizi bir cümleyle tanıtın. <b>En fazla 30 saniye.</b></li>
-    <li>“Önümüzdeki 20 dakikada ticaretin dününe, bugününe ve yarınına bakacağız. Teknik değil, iş dünyasının diliyle.”</li>
+    <li>“Önümüzdeki 15 dakikada ticaretin dününe, bugününe ve yarınına bakacağız. Teknik değil, iş dünyasının diliyle.”</li>
   </ul></aside>
 </section>
 
@@ -70,7 +70,7 @@
     <div class="ag" data-a="up"><div class="n">02</div><div class="t">Hızlanma ve geçiş</div><div class="s">Teknolojiler ne hızla yayılıyor? Geçiş nasıl yaşanıyor?</div></div>
     <div class="ag hot" data-a="up"><div class="n">03</div><div class="t">Bugün: ajanlar</div><div class="s">Yapay zekâ ajanı nedir, nasıl çalışır?</div></div>
     <div class="ag" data-a="up"><div class="n">04</div><div class="t">Gelecek</div><div class="s">Kurumlar ve liderler neyi öngörüyor?</div></div>
-    <div class="ag" data-a="up"><div class="n">05</div><div class="t">Yol haritası</div><div class="s">İşletmeler bugün nereden başlamalı?</div></div>
+    <div class="ag" data-a="up"><div class="n">05</div><div class="t">Yol haritası</div><div class="s">Hızla değişen dünyada değişmeyecek olan ne?</div></div>
   </div>
   <p class="body mt-l" data-a="up" style="--d:1.1s;max-width:1400px">Sunumdaki her rakamın kaynağı slaytın altında yer alıyor. Tahminler ayrıca “tahmin” olarak işaretlendi.</p>
   <aside class="notes"><ul>
@@ -182,50 +182,60 @@
       <div class="small" data-a="fade" style="margin-bottom:6px;letter-spacing:.06em">ABD'de teknolojiyi kullanan hanelerin oranı (%)</div>
       <div class="chart" data-chart="owid"></div>
     </div>
-    <div class="col gap-m" style="flex:1;padding-top:40px" data-stagger=".25" data-base="2.2">
-      <div class="note" data-a="up" id="owid-n1">Sabit telefonun hanelerin %10'undan %50'sine ulaşması <b>43 yıl</b> sürdü (1903 → 1946).</div>
-      <div class="note" data-a="up" id="owid-n2">İnternet aynı yolu <b>9 yılda</b> (1993 → 2002), cep telefonu <b>8 yılda</b> (1994 → 2002) aldı.</div>
-      <div class="note coral" data-a="up" id="owid-n3">Genel eğilim açık: Eğriler sağa doğru <b>dikleşiyor</b>. Seriler, hanelerin %10'una ulaşıldığı yıldan başlıyor.</div>
+    <div class="col" style="flex:1;padding-top:30px">
+      <div class="small" data-a="fade" style="--d:2s;letter-spacing:.06em;color:var(--ink-2)">Hanelerin %10'undan %50'sine ulaşma süresi</div>
+      <div class="tbars mt-m" data-stagger=".2" data-base="2.2">
+        <div class="tb" data-a="up" style="--c:#8FA2B4;--w:100%"><span class="nm">Sabit telefon <small>1903 → 1946</small></span><b>43 yıl</b><span class="tr"><i></i></span></div>
+        <div class="tb" data-a="up" style="--c:#E7B65C;--w:39.5%"><span class="nm">Elektrik <small>1908 → 1925</small></span><b>17 yıl</b><span class="tr"><i></i></span></div>
+        <div class="tb" data-a="up" style="--c:#4FC1B0;--w:18.6%"><span class="nm">Renkli TV <small>1966 → 1974</small></span><b>8 yıl</b><span class="tr"><i></i></span></div>
+        <div class="tb" data-a="up" style="--c:#5AA7F2;--w:20.9%"><span class="nm">İnternet <small>1993 → 2002</small></span><b>9 yıl</b><span class="tr"><i></i></span></div>
+        <div class="tb" data-a="up" style="--c:#EF5B5B;--w:18.6%"><span class="nm">Cep telefonu <small>1994 → 2002</small></span><b>8 yıl</b><span class="tr"><i></i></span></div>
+      </div>
+      <div class="note coral mt-l" data-a="up" style="--d:3.4s">Eğriler sağa doğru <b>dikleşiyor</b>: İnternet ve cep telefonu, sabit telefondan yaklaşık <b>5 kat</b> hızlı yayıldı.</div>
     </div>
   </div>
-  <div class="src">Our World in Data, “Technology adoption by households in the United States” (Comin ve Hobijn, 2004 ve diğer kaynaklar)</div>
+  <div class="src">Our World in Data, “Technology adoption by households in the United States” (Comin ve Hobijn, 2004 ve diğer kaynaklar) · Seriler hanelerin %10'una ulaşıldığı yıldan başlar</div>
   <aside class="notes"><ul>
-    <li>Bu grafik 100 yılı aşkın ABD hane verisi; Our World in Data'nın derlemesi.</li>
-    <li>Soldaki yatık eğriler: telefon, elektrik, otomobil. Sağdaki dik eğriler: internet, cep telefonu.</li><li>Telefonun %10'dan %50'ye çıkması 43 yıl sürdü; internet 9, cep telefonu 8 yılda. (Radyo da 1920'lerde çok hızlıydı; her teknolojide aynı değil ama genel yön bu.)</li>
+    <li>Bu grafik 100 yılı aşkın ABD hane verisi; Our World in Data'nın derlemesi. Okunsun diye beş teknolojiyi seçtik.</li>
+    <li>Kesikli çizgi “hanelerin yarısı”. Her eğrinin bu çizgiyi kestiği nokta işaretli; sağda kaç yıl sürdüğü yazıyor.</li>
+    <li>Telefonun %10'dan %50'ye çıkması 43 yıl sürdü; elektrik 17, internet 9, cep telefonu 8 yılda. (Radyo da 1920'lerde çok hızlıydı; her teknolojide aynı değil ama genel yön bu.)</li>
     <li>Mesaj: Yayılma hızı genel olarak artıyor. Şimdi yapay zekânın bu eğrilerin neresinde olduğuna bakalım.</li>
   </ul></aside>
 </section>
 
 <!-- ============ 7 · YAPAY ZEKÂ NE HIZLA YAYILIYOR ============ -->
-<section class="slide" id="yz-hiz" data-sec="2" data-title="Üretken yapay zekâ PC'den ve internetten hızlı yayılıyor">
+<section class="slide" id="yz-hiz" data-sec="2" data-title="Yapay zekâ, PC'den ve internetten hızlı yayılıyor">
   <div class="head">
     <div class="eyebrow" data-a="left">Hızlanma · Yapay zekâ</div>
-    <h2 class="h1" data-a="up" style="--d:.1s">Üretken yapay zekâ PC'den ve internetten hızlı yayılıyor</h2>
+    <h2 class="h1" data-a="up" style="--d:.1s">Yapay zekâ, PC'den ve internetten hızlı yayılıyor</h2>
   </div>
-  <div class="row mt-m" style="gap:70px;align-items:flex-start">
-    <div style="flex:1">
-      <div class="small" data-a="fade" style="margin-bottom:22px;letter-spacing:.06em">ABD'de hanelerin yarısına ulaşma süresi</div>
-      <div class="bars">
-        <div class="bar-row" style="--w:100%;--d:.5s"><span class="lab">Elektrik çağı</span><span class="track"><span class="fill"></span></span><span class="val">42 yıl</span></div>
-        <div class="bar-row" style="--w:47.6%;--d:.7s"><span class="lab">Kişisel bilgisayar</span><span class="track"><span class="fill"></span></span><span class="val">20 yıl</span></div>
-        <div class="bar-row" style="--w:28.6%;--d:.9s"><span class="lab">Masaüstü internet</span><span class="track"><span class="fill"></span></span><span class="val">12 yıl</span></div>
-        <div class="bar-row" style="--w:14.3%;--d:1.1s"><span class="lab">Mobil internet</span><span class="track"><span class="fill"></span></span><span class="val">6 yıl</span></div>
-        <div class="bar-row hot est" style="--w:7.1%;--d:1.3s"><span class="lab">Yapay zekâ<small>tahmin</small></span><span class="track"><span class="fill"></span></span><span class="val">~3 yıl</span></div>
-      </div>
-      <p class="small mt-m">Kaynak: BOND, Trends – Artificial Intelligence (Mayıs 2025), Morgan Stanley verisi. Yapay zekâ değeri ölçüm değil, tahmindir.</p>
-    </div>
-    <div class="step" data-order="1" style="flex:none">
-      <div class="small" style="margin-bottom:6px;letter-spacing:.06em">Ölçülen: ABD'de kullanan yetişkinlerin oranı (%), çıkıştan bu yana geçen yıl</div>
+  <div class="row mt-m grow" style="gap:56px;align-items:flex-start">
+    <div class="col" style="flex:none">
+      <div class="small" data-a="fade" style="margin-bottom:6px;letter-spacing:.06em;color:var(--ink-2)">ABD'de kullanan yetişkinlerin oranı (%) · teknoloji çıktıktan sonra geçen yıl</div>
       <div class="chart" data-chart="genai"></div>
     </div>
+    <div class="col" style="flex:1;padding-top:34px">
+      <div class="note coral" data-a="up" style="--d:2.4s">Aynı yaşta karşılaştırma: Çıkışından <b>4 yıl sonra</b> yetişkinlerin <b>%60'ı</b> yapay zekâ kullanıyor. İnternette bu oran <b>%36</b>, PC'de (3. yıl) <b>%20</b> idi.</div>
+      <div class="step mt-l" data-order="1">
+        <div class="small" style="margin-bottom:14px;letter-spacing:.06em;color:var(--ink-2)">Hanelerin yarısına ulaşma süresi (ABD)</div>
+        <div class="bars compact">
+          <div class="bar-row" style="--w:100%;--d:.1s"><span class="lab">Elektrik çağı</span><span class="track"><span class="fill"></span></span><span class="val">42 yıl</span></div>
+          <div class="bar-row" style="--w:47.6%;--d:.25s"><span class="lab">Kişisel bilgisayar</span><span class="track"><span class="fill"></span></span><span class="val">20 yıl</span></div>
+          <div class="bar-row" style="--w:28.6%;--d:.4s"><span class="lab">Masaüstü internet</span><span class="track"><span class="fill"></span></span><span class="val">12 yıl</span></div>
+          <div class="bar-row" style="--w:14.3%;--d:.55s"><span class="lab">Mobil internet</span><span class="track"><span class="fill"></span></span><span class="val">6 yıl</span></div>
+          <div class="bar-row hot est" style="--w:7.1%;--d:.7s"><span class="lab">Yapay zekâ<small>tahmin</small></span><span class="track"><span class="fill"></span></span><span class="val">~3 yıl</span></div>
+        </div>
+        <p class="small mt-s" style="font-size:16px">BOND / Morgan Stanley (Mayıs 2025). Yapay zekâ değeri ölçüm değil, tahmindir.</p>
+      </div>
+      <div class="pill step mt-m" data-order="2" style="align-self:flex-start"><span class="dot"></span>ChatGPT: haftada&nbsp;<b>900 milyon</b>&nbsp;kullanıcı</div>
+    </div>
   </div>
-  <div class="grow"></div>
-  <div class="pill step" data-order="2" style="align-self:flex-start"><span class="dot"></span>ChatGPT: haftada&nbsp;<b>900 milyon</b>&nbsp;kullanıcı (OpenAI, Şubat 2026)</div>
-  <div class="src">BOND (Mayıs 2025) · St. Louis Fed ve Harvard, GenAI Adoption Tracker (Ağustos 2026); PC ve internet: ABD Nüfus Bürosu, ITU · OpenAI (27 Şubat 2026)</div>
+  <div class="src">St. Louis Fed ve Harvard, GenAI Adoption Tracker (Ağustos 2026); PC ve internet: ABD Nüfus Bürosu, ITU · BOND, Trends – Artificial Intelligence (Mayıs 2025) · OpenAI (27 Şubat 2026)</div>
   <aside class="notes"><ul>
-    <li>Soldaki çubuklar: Her dalga bir öncekinin yaklaşık yarısı kadar sürede yayıldı. Yapay zekâ için 3 yıl bir <b>tahmin</b>.</li>
-    <li>(tık) Sağdaki grafik ise ölçüm: St. Louis Fed'in anketi. ChatGPT'den 4 yıl sonra ABD'de yetişkinlerin %60'ı üretken yapay zekâ kullanıyor. İnternet 4. yılında %36'daydı, PC 3. yılında %20'deydi.</li>
-    <li>(tık) Ölçek: ChatGPT'yi her hafta 900 milyon kişi kullanıyor.</li>
+    <li>Grafik ölçüm: St. Louis Fed'in anketi. Yatay eksen takvim yılı değil, teknolojinin çıkışından bu yana geçen yıl; yani üç teknolojiyi <b>aynı yaşta</b> karşılaştırıyoruz.</li>
+    <li>Kırmızı şerit 4. yıl: ChatGPT'den 4 yıl sonra ABD'de yetişkinlerin %60'ı üretken yapay zekâ kullanıyor. İnternet 4. yılında %36'daydı, PC 3. yılında %20'deydi. (PC için yalnızca üç ölçüm var; o yüzden kesikli.)</li>
+    <li>(tık) Sağdaki çubuklar: Her dalga bir öncekinin yaklaşık yarısı kadar sürede yayıldı. Yapay zekâ için 3 yıl bir <b>tahmin</b>.</li>
+    <li>(tık) Ölçek: ChatGPT'yi her hafta 900 milyon kişi kullanıyor (OpenAI, Şubat 2026).</li>
   </ul></aside>
 </section>
 
@@ -301,118 +311,54 @@
 </section>
 
 <!-- ============ 10 · TÜRKİYE ============ -->
-<section class="slide" id="turkiye" data-sec="2" data-title="Türkiye: Bireyler hızlı, şirketler daha yavaş">
+<section class="slide" id="turkiye" data-sec="2" data-title="Türkiye: Bireyler hızlı, şirketler daha yavaş" data-target="8:30">
   <div class="head">
     <div class="eyebrow" data-a="left">Hızlanma · Türkiye</div>
     <h2 class="h1" data-a="up" style="--d:.1s">Türkiye'de bireyler hızla benimsiyor, şirketler daha yavaş</h2>
   </div>
-  <div class="row mt-l grow" style="gap:80px;align-items:flex-start">
-    <div style="flex:none;width:1080px;padding-top:30px">
-      <div class="gbars">
-        <div class="gb"><div class="pair">
-          <div class="c" style="--h:32%;--d:.4s"><span class="v">%19,2</span><span class="b"></span><span class="yy">2025</span></div>
-          <div class="c new" style="--h:62.7%;--d:.6s"><span class="v">%37,6</span><span class="b"></span><span class="yy">2026</span></div>
-        </div><div class="l">Üretken yapay zekâ kullanan bireyler (16-74 yaş)</div></div>
-        <div class="gb"><div class="pair">
-          <div class="c" style="--h:12.5%;--d:.8s"><span class="v">%7,5</span><span class="b"></span><span class="yy">2025</span></div>
-          <div class="c new" style="--h:23.3%;--d:1s"><span class="v">%14,0</span><span class="b"></span><span class="yy">2026</span></div>
-          <div class="c eu" style="--h:33.3%;--d:1.2s"><span class="v">%20,0</span><span class="b"></span><span class="yy">AB 2025</span></div>
-        </div><div class="l">Yapay zekâ kullanan şirketler (10+ çalışan)</div></div>
-        <div class="gb"><div class="pair">
-          <div class="c new" style="--h:21.2%;--d:1.4s"><span class="v">%12,7</span><span class="b"></span><span class="yy">2026</span></div>
-        </div><div class="l">Toptan ve perakende ticaret</div></div>
-        <div class="gb"><div class="pair">
-          <div class="c new" style="--h:61.8%;--d:1.6s"><span class="v">%37,1</span><span class="b"></span><span class="yy">2026</span></div>
-          <div class="c eu" style="--h:91.7%;--d:1.8s"><span class="v">%55,0</span><span class="b"></span><span class="yy">AB 2025</span></div>
-        </div><div class="l">Büyük şirketler (250+ çalışan)</div></div>
+  <div class="row mt-l grow" style="gap:60px;align-items:flex-start">
+    <div class="dumb" style="flex:none;width:1080px;--d:.2s" data-a="fade">
+      <div class="dlegend"><span><i class="o"></i>Türkiye 2025</span><span><i class="n"></i>Türkiye 2026</span><span><i class="eu"></i>AB ortalaması 2025</span></div>
+      <div class="drow" style="--a:19.2;--b:37.6;--d:.4s">
+        <div class="dl"><b>Bireyler</b><small>Üretken yapay zekâ, 16-74 yaş</small></div>
+        <div class="dt"><span class="seg"></span><span class="pt o"><i>%19,2</i></span><span class="pt n"><i>%37,6</i></span><span class="tag">2 kat</span></div>
       </div>
+      <div class="drow" style="--a:7.5;--b:14;--e:20;--d:.9s">
+        <div class="dl"><b>Şirketler</b><small>Yapay zekâ kullanan, 10+ çalışan</small></div>
+        <div class="dt"><span class="seg"></span><span class="pt o"><i>%7,5</i></span><span class="pt n"><i>%14,0</i></span><span class="pt eu"><i>AB %20</i></span></div>
+      </div>
+      <div class="drow" style="--b:37.1;--e:55;--d:1.4s">
+        <div class="dl"><b>Büyük şirketler</b><small>250+ çalışan</small></div>
+        <div class="dt"><span class="seg thin"></span><span class="pt n"><i>%37,1</i></span><span class="pt eu"><i>AB %55</i></span></div>
+      </div>
+      <div class="drow" style="--b:12.7;--d:1.9s">
+        <div class="dl"><b>Toptan ve perakende</b><small>Ticaret şirketleri</small></div>
+        <div class="dt"><span class="seg thin"></span><span class="pt n"><i>%12,7</i></span></div>
+      </div>
+      <div class="daxis"><span></span><div class="sc"><span style="left:0">%0</span><span style="left:33.33%">%20</span><span style="left:66.66%">%40</span><span style="left:100%">%60</span></div></div>
     </div>
-    <div class="card step" data-order="1" style="flex:1">
+    <div class="card step" data-order="1" style="flex:1;padding:30px 32px">
       <div class="k">Şirketler neden başlamıyor?</div>
-      <p class="mt-s" style="font-size:21px">Kullanmayı düşünüp kullanmayan şirketlerin belirttiği engeller:</p>
-      <div class="bars mt-s" style="gap:14px">
-        <div class="bar-row hot" style="grid-template-columns:1fr 90px;--w:100%"><span class="lab" style="text-align:left;font-size:22px">Uzmanlık eksikliği</span><span class="val" style="font-size:28px">%72,3</span></div>
-        <div class="bar-row" style="grid-template-columns:1fr 90px"><span class="lab" style="text-align:left;font-size:22px">Hukuki belirsizlik</span><span class="val" style="font-size:28px">%66,4</span></div>
-        <div class="bar-row" style="grid-template-columns:1fr 90px"><span class="lab" style="text-align:left;font-size:22px">Veri gizliliği kaygısı</span><span class="val" style="font-size:28px">%65,4</span></div>
+      <p class="mt-s" style="font-size:20px;color:var(--ink-2)">Kullanmayı düşünüp kullanmayan şirketlerin belirttiği engeller:</p>
+      <div class="obars mt-m">
+        <div class="ob hot" style="--w:72.3%;--d:.2s"><span>Uzmanlık eksikliği</span><b>%72,3</b><span class="tr"><i></i></span></div>
+        <div class="ob" style="--w:66.4%;--d:.35s"><span>Hukuki belirsizlik</span><b>%66,4</b><span class="tr"><i></i></span></div>
+        <div class="ob" style="--w:65.4%;--d:.5s"><span>Veri gizliliği kaygısı</span><b>%65,4</b><span class="tr"><i></i></span></div>
       </div>
     </div>
   </div>
   <div class="src">TÜİK, Yapay Zekâ İstatistikleri 2025 ve 2026 (Ekim 2026) · Eurostat (11 Aralık 2025; AB'nin 2026 verisi henüz yayımlanmadı)</div>
   <aside class="notes"><ul>
+    <li>⏱ Hedef: <b>8:30</b>.</li>
+    <li>Grafiği okuma: Gri nokta 2025, mavi nokta 2026, sarı elmas AB ortalaması. Çizgi ne kadar uzunsa bir yıldaki sıçrama o kadar büyük.</li>
     <li>Bireylerde üretken yapay zekâ kullanımı bir yılda neredeyse ikiye katlandı: %19,2'den %37,6'ya. Her 10 yetişkinden 4'e yakını.</li>
-    <li>Şirketlerde %7,5'ten %14'e çıktı ama AB'nin 2025 ortalamasının (%20) hâlâ altında. Toptan ve perakendede %12,7.</li>
+    <li>Şirketlerde %7,5'ten %14'e çıktı ama AB'nin 2025 ortalamasının (%20) hâlâ altında. Büyük şirketlerde fark daha açık: %37'ye karşı %55. Toptan ve perakendede %12,7; ortalamanın da altında.</li>
     <li>Not: AB'nin 2026 verisi aralıkta açıklanacak; karşılaştırmada yıllar farklı.</li>
     <li>(tık) En sık belirtilen engel <b>uzmanlık eksikliği</b>. Ardından hukuki belirsizlik ve veri gizliliği geliyor; KVKK sorusu buradan gelir.</li>
   </ul></aside>
 </section>
 
-<!-- ============ 11 · ELEKTRİK DERSİ ============ -->
-<section class="slide" id="elektrik" data-sec="2" data-title="Geçiş süreci: elektrik dersi">
-  <div class="bgimg" data-bg="assets/img/fabrika-kayis-kasnak-2.jpg" style="left:auto;width:46%;background-color:#0F1E2C;filter:grayscale(1) contrast(1.05);-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%);opacity:.7" data-a="blur"></div>
-  <div class="ph-credit">Kayış ve kasnaklarla çalışan atölye, 1900'lerin başı · Queensland Museum (kamu malı)</div>
-  <div class="content" style="max-width:1060px">
-    <div class="head">
-      <div class="eyebrow" data-a="left">Geçiş süreci · Tarihten bir ders</div>
-      <h2 class="h1" data-a="up" style="--d:.1s">Elektrik geldi, verim yaklaşık 40 yıl sonra geldi</h2>
-    </div>
-    <div class="mini-who" data-a="up" style="--d:.25s;margin-top:22px"><img src="assets/img/portre/andrew-ng.jpg" alt="Andrew Ng" style="object-position:50% 22%"><div><div class="q">“Yapay zekâ yeni elektriktir.”</div><div class="rl"><b>Andrew Ng</b> · Google Brain'in kurucularından, Coursera kurucu ortağı · Stanford, Ocak 2017</div></div></div>
-    <div class="ladder mt-m" data-stagger=".3" data-base=".5">
-      <div class="rung" data-a="up"><div class="y">1882</div><div class="t">İlk merkezî elektrik santralleri kuruluyor.</div></div>
-      <div class="rung" data-a="up"><div class="y">1899</div><div class="t">Elektrik motorları, ABD fabrikalarındaki gücün %5'inden azını sağlıyor.</div></div>
-      <div class="rung" data-a="up"><div class="y">1919</div><div class="t">Fabrika gücünün yaklaşık yarısı elektrikli. Ama çoğu fabrikada buhar makinesinin yerine yalnızca tek büyük motor konmuş; kayışlar ve yerleşim aynı.</div></div>
-      <div class="rung hot" data-a="up"><div class="y">1920'ler</div><div class="t">Her makineye kendi motoru, tek katlı ve aydınlık fabrikalar, yeni iş akışı. ABD imalatında verim yılda %5'in üzerinde artıyor.</div></div>
-    </div>
-    <div class="note coral mt-m step" data-order="1">Bugün de benzer: McKinsey'ye göre yapay zekâdan en çok kazanan şirketlerin iş akışlarını <b>baştan tasarlamış olma ihtimali yaklaşık 3 kat</b> daha yüksek.</div>
-  </div>
-  <div class="src">Paul A. David, “The Dynamo and the Computer”, American Economic Review (1990) · Devine (1983) · McKinsey, The State of AI (2025) · Portre: TechCrunch, CC BY 2.0</div>
-  <aside class="notes"><ul>
-    <li>Andrew Ng, Google'ın yapay zekâ ekibini kuran isim. Meşhur sözü: “Yapay zekâ yeni elektriktir.” O hâlde elektrikten ders alalım.</li>
-    <li>Fabrikalar önce sadece motoru değiştirdi, düzeni değiştirmedi; verim gelmedi. Verim, fabrika baştan tasarlanınca geldi.</li>
-    <li>(tık) Bugünkü karşılığı: Yapay zekâyı eski sürecin üstüne eklemek yetmiyor; süreci yeniden tasarlamak gerekiyor. (Bu bir ilişki; nedensellik kanıtlanmış değil.)</li>
-  </ul></aside>
-</section>
-
-<!-- ============ 12 · ABARTI DÖNGÜSÜ ============ -->
-<section class="slide" id="dongu" data-sec="2" data-title="Beklenti ve gerçek: abartı döngüsü" data-target="10:30">
-  <div class="head">
-    <div class="eyebrow" data-a="left">Geçiş süreci · Beklenti ve gerçek</div>
-    <h2 class="h1" data-a="up" style="--d:.1s">Her yeni teknoloji önce abartılır, sonra olgunlaşır</h2>
-  </div>
-  <div class="row mt-m grow" style="gap:60px;align-items:flex-start">
-    <div style="flex:none;width:960px;--d:.2s" data-a="fade">
-      <svg class="hype" viewBox="0 0 960 470" width="960" height="470" data-onpath=".curve" style="overflow:visible">
-        <defs><linearGradient id="hypeGrad" x1="0" x2="1"><stop offset="0" stop-color="#5AA7F2"/><stop offset=".3" stop-color="#EF5B5B"/><stop offset=".5" stop-color="#8FA2B4"/><stop offset="1" stop-color="#4FC1B0"/></linearGradient></defs>
-        <line x1="0" y1="410" x2="960" y2="410" stroke="rgba(243,241,235,.25)" stroke-width="2"/>
-        <line x1="0" y1="0" x2="0" y2="410" stroke="rgba(243,241,235,.25)" stroke-width="2"/>
-        <text x="12" y="20" class="phase-t" style="letter-spacing:.12em">BEKLENTİ</text>
-        <text x="950" y="400" class="phase-t" text-anchor="end" style="letter-spacing:.12em">ZAMAN →</text>
-        <path class="curve drawme" d="M20 395 C 110 392, 160 60, 225 52 C 290 44, 310 330, 400 350 C 480 366, 570 262, 690 228 C 790 202, 860 196, 950 194"/>
-        <text x="70" y="440" class="phase-t" text-anchor="middle">Tetikleyici</text>
-        <text x="225" y="440" class="phase-t" text-anchor="middle"><tspan x="225">Abartılı beklentiler</tspan><tspan x="225" dy="22">zirvesi</tspan></text>
-        <text x="405" y="440" class="phase-t" text-anchor="middle"><tspan x="405">Hayal kırıklığı</tspan><tspan x="405" dy="22">çukuru</tspan></text>
-        <text x="640" y="440" class="phase-t" text-anchor="middle"><tspan x="640">Aydınlanma</tspan><tspan x="640" dy="22">yokuşu</tspan></text>
-        <text x="870" y="440" class="phase-t" text-anchor="middle"><tspan x="870">Verimlilik</tspan><tspan x="870" dy="22">platosu</tspan></text>
-        <g data-px="262"><g class="mk step" data-order="1"><circle r="14" fill="#EF5B5B"/><text x="24" y="-14" fill="#EF5B5B">Yapay zekâ ajanları</text><text x="24" y="14" fill="#C9D2DB" style="font:500 18px Inter">2025: zirvede · 2026: inişe geçti</text></g></g>
-        <g data-px="398"><g class="mk step" data-order="2"><circle r="14" fill="#5AA7F2"/><text x="20" y="46" fill="#5AA7F2">Üretken yapay zekâ</text><text x="20" y="72" fill="#C9D2DB" style="font:500 18px Inter">2025-2026: çukurda</text></g></g>
-      </svg>
-    </div>
-    <div class="col gap-s step" data-order="3" style="flex:1;padding-top:10px">
-      <div class="card" style="padding:22px 28px"><div class="big sky" style="font-size:52px;margin-top:0">%88</div><p class="mt-xs">Şirketlerin en az bir işlevde yapay zekâ kullanma oranı (McKinsey, 2025)</p></div>
-      <div class="card" style="padding:22px 28px"><div class="big" style="font-size:52px;margin-top:0;color:var(--muted)">%56</div><p class="mt-xs">Son 12 ayda yapay zekâdan ne gelir ne maliyet kazancı gören CEO'lar (PwC, Ocak 2026)</p></div>
-      <div class="card" style="padding:22px 28px"><div class="big coral" style="font-size:52px;margin-top:0">~%6</div><p class="mt-xs">Kârının en az %5'ini yapay zekâya bağlayan “yüksek performanslı” şirketler (McKinsey, 2026)</p></div>
-    </div>
-  </div>
-  <div class="src">Gartner Hype Cycle for AI (Ağustos 2025) ve Agentic AI (Nisan 2026) · McKinsey, The State of AI (2025, 2026) · PwC 29. Küresel CEO Araştırması (Ocak 2026; 4.454 CEO)</div>
-  <aside class="notes"><ul>
-    <li>Bu, Gartner'ın “abartı döngüsü” (Hype Cycle). Her yeni teknoloji önce abartılır, hayal kırıklığından geçer, sonra gerçek değerini bulur.</li>
-    <li>(tık) Ajanlar 2025'te zirvedeydi; 2026'da inişe geçtiler. Gartner, ajan projelerinin %40'ından fazlasının 2027 sonuna kadar iptal edileceğini öngörüyor.</li>
-    <li>(tık) Üretken yapay zekâ ise çukurda; yani beklentiler gerçekle yüzleşiyor. Bu kötü haber değil, olgunlaşmanın parçası.</li>
-    <li>(tık) Rakamlar: Kullanım çok yaygın (%88), ama CEO'ların yarısından fazlası henüz kazanç görmedi; büyük kazanç sağlayanlar yaklaşık %6.</li>
-    <li>Bill Gates'in sözü: “Önümüzdeki iki yılda olacak değişimi hep abartır, on yılda olacak değişimi ise hep küçümseriz.”</li>
-  </ul></aside>
-</section>
-
-<!-- ============ 13 · AJAN NEDİR ============ -->
+<!-- ============ 11 · AJAN NEDİR ============ -->
 <section class="slide" id="ajan-nedir" data-sec="3" data-title="Yapay zekâ ajanı nedir?">
   <div class="head">
     <div class="eyebrow" data-a="left">Bugün · Temel kavram</div>
@@ -440,7 +386,7 @@
   </ul></aside>
 </section>
 
-<!-- ============ 14 · AJAN DÖNGÜSÜ ============ -->
+<!-- ============ 12 · AJAN DÖNGÜSÜ ============ -->
 <section class="slide" id="ajan-dongu" data-sec="3" data-title="Bir ajan nasıl çalışır?">
   <div class="head">
     <div class="eyebrow" data-a="left">Bugün · Nasıl çalışır?</div>
@@ -483,8 +429,8 @@
   </ul></aside>
 </section>
 
-<!-- ============ 15 · ARA → SOR → YAPTIR ============ -->
-<section class="slide" id="yolculuk" data-sec="3" data-title="Alışverişin üç dönemi: ara, sor, yaptır">
+<!-- ============ 13 · ARA → SOR → YAPTIR ============ -->
+<section class="slide" id="yolculuk" data-sec="3" data-title="Alışverişin üç dönemi: ara, sor, yaptır" data-target="11:00">
   <div class="head">
     <div class="eyebrow" data-a="left">Bugün · Alışveriş nasıl değişiyor?</div>
     <h2 class="h1" data-a="up" style="--d:.1s">Alışverişin üç dönemi: ara, sor, yaptır</h2>
@@ -527,7 +473,7 @@
   </div>
   <div class="src">Microsoft Build 2025 (19 Mayıs 2025) · Adobe Analytics, ABD 2025 yılbaşı sezonu (Ocak 2026) · Alışveriş örnekleri temsilîdir · Portre: Brian Smale / Microsoft, CC BY-SA 4.0</div>
   <aside class="notes"><ul>
-    <li>Microsoft'un CEO'su Satya Nadella bu ayrımı en sade biçimde anlatıyor: Asistana sorarsınız, cevap verir; ajana görev verirsiniz, işi yapar.</li><li>Yirmi yıl boyunca alışveriş: arama kutusu, 10 bağlantı, 15 sekme. (tık)</li>
+    <li>⏱ Hedef: <b>11:00</b>.</li><li>Microsoft'un CEO'su Satya Nadella bu ayrımı en sade biçimde anlatıyor: Asistana sorarsınız, cevap verir; ajana görev verirsiniz, işi yapar.</li><li>Yirmi yıl boyunca alışveriş: arama kutusu, 10 bağlantı, 15 sekme. (tık)</li>
     <li>Son iki üç yıl: Soruyoruz, tek ve karşılaştırmalı bir cevap alıyoruz. (tık)</li>
     <li>Şimdi başlayan: <b>Yaptırıyoruz</b>. Ajan tarar, doğrular, siparişi hazırlar; siz onaylarsınız. (tık)</li>
     <li>ABD'de yapay zekâdan gelen alışveriş trafiği %693 arttı, yani yaklaşık 8 katına çıktı; bu ziyaretçilerin satın alma oranı %31 daha yüksek.</li>
@@ -535,38 +481,7 @@
   </ul></aside>
 </section>
 
-<!-- ============ 16 · DÖRT SAHNE ============ -->
-<section class="slide" id="sahneler" data-sec="3" data-title="Ajanlar iş başında: dört senaryo" data-target="13:30">
-  <div class="row" style="justify-content:space-between;align-items:flex-end">
-    <div class="head">
-      <div class="eyebrow" data-a="left">Bugün · Türk ticaretinden örnekler</div>
-      <h2 class="h1" data-a="up" style="--d:.1s">Ajanlar iş başında: dört senaryo</h2>
-    </div>
-    <span class="pill" data-a="fade" style="--d:.5s">Senaryo · bugün ve 2028</span>
-  </div>
-  <div class="scenes mt-m">
-    <div class="scene step" data-order="1"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-ship"/></svg></span>İhracatçı</div>
-      <div class="ln"><b>Bugün</b><span>Almanca teklif için tercüman bekliyor; katalog tek dilde.</span></div>
-      <div class="ln now"><b>2028</b><span>Gelen talebe 10 dakikada, müşterinin kendi dilinde teklif, ürün föyü ve navlun hesabı.</span></div></div>
-    <div class="scene step" data-order="2"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-box"/></svg></span>Toptancı</div>
-      <div class="ln"><b>Bugün</b><span>Bayi siparişleri WhatsApp'tan, mesai saatinde, elle giriliyor.</span></div>
-      <div class="ln now"><b>2028</b><span>Bayinin ajanı gece 02.00'de stok soruyor, sipariş veriyor; sabah sevkiyat hazır.</span></div></div>
-    <div class="scene step" data-order="3"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-shop"/></svg></span>Perakendeci</div>
-      <div class="ln"><b>Bugün</b><span>Herkese aynı vitrin, aynı kampanya, aynı mesaj.</span></div>
-      <div class="ln now"><b>2028</b><span>Her müşteriye ayrı vitrin; sorulara 7/24, müşterinin kendi dilinde cevap.</span></div></div>
-    <div class="scene step" data-order="4"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-factory"/></svg></span>Üretici KOBİ</div>
-      <div class="ln"><b>Bugün</b><span>Teklif, evrak ve gümrük ön hazırlığı günler sürüyor.</span></div>
-      <div class="ln now"><b>2028</b><span>Teknik çizimden teklife, evraktan gümrük ön beyanına: saatler.</span></div></div>
-  </div>
-  <div class="src nolabel">Senaryolar temsilîdir. Bugünden bir örnek: Trendyol, kendi dil modeliyle satıcılarının 10 dilde yurt dışı pazarlara açılabildiğini açıkladı (Erdem İnan, Ekim 2026).</div>
-  <aside class="notes"><ul>
-    <li>⏱ Hedef: <b>13:30</b>.</li>
-    <li>Bunlar gerçek vaka değil; bugünkü araçlarla mümkün olan senaryolar. Her tıkta bir sahne, kısa geçin.</li>
-    <li>“Bu salonda bu dört sahneden birini yaşamayan yok. Sizinki hangisi?”</li>
-  </ul></aside>
-</section>
-
-<!-- ============ 17 · KURUMLARIN TAHMİNLERİ ============ -->
+<!-- ============ 14 · KURUMLARIN TAHMİNLERİ ============ -->
 <section class="slide" id="tahminler" data-sec="4" data-title="Kurumların 2030 öngörüleri">
   <div class="head">
     <div class="eyebrow" data-a="left">Gelecek · Kurumların öngörüleri</div>
@@ -590,7 +505,7 @@
   </ul></aside>
 </section>
 
-<!-- ============ 18 · ALINTI: BILL GATES ============ -->
+<!-- ============ 15 · ALINTI: BILL GATES ============ -->
 <section class="slide qslide photo" id="gates" data-sec="4" data-title="Bill Gates: Ajanlar alışverişi nasıl değiştirecek?">
   <div class="qbg" data-bg="assets/img/portre/bill-gates.jpg"></div>
   <div class="qphoto" data-bg="assets/img/portre/bill-gates.jpg" data-a="fade" style="--d:.1s;background-position:52% 35%"></div>
@@ -609,7 +524,7 @@
   </ul></aside>
 </section>
 
-<!-- ============ 19 · ALINTI: JENSEN HUANG ============ -->
+<!-- ============ 16 · ALINTI: JENSEN HUANG ============ -->
 <section class="slide qslide photo" id="huang" data-sec="4" data-title="Jensen Huang: ajanların İK'sı">
   <div class="qbg ces" data-bg="assets/img/portre/jensen-huang-ces2025-sahne.jpg"></div>
   <div class="qphoto" data-bg="assets/img/portre/jensen-huang-buyuk.jpg" data-a="fade" style="--d:.1s;background-position:40% 35%"></div>
@@ -626,7 +541,7 @@
   </ul></aside>
 </section>
 
-<!-- ============ 20 · METR: AJANLARIN İŞ SÜRESİ ============ -->
+<!-- ============ 17 · METR: AJANLARIN İŞ SÜRESİ ============ -->
 <section class="slide" id="metr" data-sec="4" data-title="Ajanların bitirebildiği işin süresi katlanıyor">
   <div class="head">
     <div class="eyebrow" data-a="left">Gelecek · Büyüme hızı</div>
@@ -651,8 +566,8 @@
   </ul></aside>
 </section>
 
-<!-- ============ 21 · ALINTI: DEMIS HASSABIS ============ -->
-<section class="slide qslide photo" id="hassabis" data-sec="4" data-title="Demis Hassabis: 10 kat büyük, 10 kat hızlı">
+<!-- ============ 18 · ALINTI: DEMIS HASSABIS ============ -->
+<section class="slide qslide photo" id="hassabis" data-sec="4" data-title="Demis Hassabis: 10 kat büyük, 10 kat hızlı" data-target="14:15">
   <div class="qbg" data-bg="assets/img/portre/demis-hassabis.jpg"></div>
   <div class="qphoto" data-bg="assets/img/portre/demis-hassabis.jpg" data-a="fade" style="--d:.1s;background-position:68% 40%"></div>
   <div class="content">
@@ -663,69 +578,14 @@
   <div class="idcard" data-a="up" style="--d:.7s"><div class="nm">Demis Hassabis</div><div class="rl">Google DeepMind CEO'su · 2024 Nobel Kimya Ödülü sahibi</div><div class="when">The Guardian söyleşisi · Ağustos 2025</div></div>
   <div class="pcredit">Fotoğraf: Jay Dixit, Nobel konferansı, Stockholm 2024 · CC BY-SA 4.0 · kırpıldı</div>
   <aside class="notes"><ul>
-    <li>Demis Hassabis, Google'ın yapay zekâ laboratuvarı DeepMind'ın başında. Proteinlerin yapısını çözen yapay zekâ çalışmasıyla 2024'te Nobel Kimya Ödülü'nü aldı.</li>
+    <li>⏱ Hedef: <b>14:15</b>.</li><li>Demis Hassabis, Google'ın yapay zekâ laboratuvarı DeepMind'ın başında. Proteinlerin yapısını çözen yapay zekâ çalışmasıyla 2024'te Nobel Kimya Ödülü'nü aldı.</li>
     <li>Sanayi Devrimi yaklaşık bir yüzyılda yayıldı. Onun tahmini: Bu dönüşüm bir on yıla sığabilir. Bu bir tahmin; ölçek fikri vermek için aktarıyorum.</li>
-    <li>Peki uzun vadede bu gidişat bizi nereye götürüyor? Bir astrofizikçinin ölçeğine bakalım.</li>
+    <li>Bu kadar hızlı bir değişimin içinde, değişmeyecek olan ne? Son olarak buna bakalım.</li>
   </ul></aside>
 </section>
 
-<!-- ============ 22 · KARDAŞEV ÖLÇEĞİ ============ -->
-<section class="slide" id="kardasev" data-sec="4" data-title="Kardaşev ölçeği" data-target="17:45">
-  <div class="row" style="gap:60px;align-items:flex-start">
-    <div class="head" style="flex:1">
-      <div class="eyebrow" data-a="left">Gelecek · Uzun vadeli bakış</div>
-      <h2 class="h1" data-a="up" style="--d:.1s">Kardaşev ölçeği: Bir uygarlık ne kadar enerji kullanabiliyor?</h2>
-      <p class="lead" data-a="up" style="--d:.25s" id="k-bio">Kardaşev 1964'te uygarlıkları enerji kullanımına göre üç türe ayırdı.</p>
-    </div>
-    <div class="kport" data-a="fade" style="--d:.4s"><img src="assets/img/portre/nikolai-kardashev.jpg" alt="Nikolay Kardaşev"><div class="cap"><b>Nikolay Kardaşev</b>(1932-2019) Sovyet ve Rus astrofizikçi, Rusya Bilimler Akademisi üyesi<span>Fotoğraf: Woodruff T. Sullivan III, Moskova 1980 · NRAO/AUI Archives, CC BY 4.0</span></div></div>
-  </div>
-  <div class="kscale mt-m" data-a="fade" style="--d:.4s">
-    <div class="bar"></div>
-    <div class="tk" style="left:0%"><div class="w">10⁶ watt</div><div class="lv"><b>0</b></div></div>
-    <div class="tk" style="left:33.33%"><div class="w">~10¹⁶ watt</div><div class="lv"><b>Tip I</b><span>Gezegenine ulaşan enerjinin tamamı</span></div></div>
-    <div class="tk" style="left:66.66%"><div class="w">~10²⁶ watt</div><div class="lv"><b>Tip II</b><span>Yıldızının tüm enerjisi</span></div></div>
-    <div class="tk" style="left:100%"><div class="w">~10³⁶ watt</div><div class="lv"><b>Tip III</b><span>Galaksisinin tüm enerjisi</span></div></div>
-    <div class="us" id="k-us" style="--x:24.3%"><div class="o"></div><div class="lb" id="k-us-lb">İnsanlık bugün<br>~0,73</div></div>
-  </div>
-  <div class="row mt-m step" data-order="1" style="gap:22px;align-items:stretch">
-    <div class="card" style="flex:1.1;padding:26px 30px"><div class="k">Nerede duruyoruz?</div><p class="mt-xs" id="k-where">İnsanlık 2025'te yaklaşık 600 eksajul birincil enerji kullandı; bu, ortalama 1,9×10¹³ watt demek. Carl Sagan'ın ara değer ölçeğiyle <b>yaklaşık 0,73</b>. Tip I için bugünkünün <b>yaklaşık 525 katı</b> enerji gerekiyor.</p></div>
-    <div class="card" style="flex:1;padding:26px 30px"><div class="k sky">Yapay zekâ ve enerji</div><p class="mt-xs" id="k-iea">Veri merkezlerinin elektrik tüketimi 2025'te <b>%17 artarak 485 TWh</b>'e ulaştı. Uluslararası Enerji Ajansına göre 2030'da yaklaşık <b>945 TWh</b> olacak; küresel elektriğin yaklaşık %3'ü.</p></div>
-    <div class="card" style="flex:1;padding:26px 30px"><div class="k gold">Neden önemli?</div><p class="mt-xs">Yapay zekâ enerjiyi zekâya çeviriyor. Enerjiye ve veriye erişim, yeni çağın altyapı rekabeti.</p></div>
-  </div>
-  <div class="src" id="k-src">Kardashev, Soviet Astronomy 8, s. 217 (1964) · Sagan, The Cosmic Connection (1973) · Gray, Astronomical Journal (2020) · Energy Institute, Statistical Review of World Energy 2026 · IEA, Energy and AI (2025) ve Key Questions on Energy and AI (Nisan 2026)</div>
-  <aside class="notes"><ul>
-    <li>⏱ Hedef: <b>17:45</b>.</li>
-    <li>Nikolay Kardaşev, Sovyet astrofizikçi. 1964'te uzaydaki uygarlıkları kullanabildikleri enerjiye göre sınıflandırdı: gezegen, yıldız, galaksi.</li>
-    <li>Carl Sagan 1973'te ölçeğe ara değerler ekledi: Tip I = 10¹⁶ watt. Bu hesaba göre insanlık bugün yaklaşık 0,73'te; henüz Tip I bile değiliz. Tip I için bugünkünün yaklaşık 525 katı enerji gerekiyor.</li>
-    <li>Birimler: TWh = terawatt saat (milyar kilovatsaat). Eksajul = 10¹⁸ jul. IEA'nın karşılaştırmasıyla 2030'daki veri merkezi tüketimi, bugün Japonya'nın toplam elektrik tüketiminden biraz fazla.</li><li>(tık) Neden bu sunumda? Çünkü yapay zekâ, enerjiyi zekâya çeviren bir makine. Veri merkezlerinin elektrik tüketimi 2025'te %17 arttı; 2030'a kadar 2024'ün iki katından fazlasına çıkacak. Uzun vadede enerjiye ve veriye erişim, rekabetin temel altyapısı.</li>
-  </ul></aside>
-</section>
-
-<!-- ============ 23 · BEŞ ADIM ============ -->
-<section class="slide" id="adimlar" data-sec="5" data-title="İşletmeler için beş adım">
-  <div class="head">
-    <div class="eyebrow" data-a="left">Yol haritası</div>
-    <h2 class="h1" data-a="up" style="--d:.1s">İşletmeler için beş adım</h2>
-  </div>
-  <div class="steps5 mt-m">
-    <div class="s5 step" data-order="1"><span class="n">1</span><span class="t">Önce yönetici olarak siz kullanın<small>Her gün, kendi işinizde. Yöneticinin kullanmadığı araç şirkete yayılmaz.</small></span></div>
-    <div class="s5 step" data-order="2"><span class="n">2</span><span class="t">Tek bir sorun seçin, 90 günde ölçün<small>Teklif süresi, müşteriye cevap süresi, stok hatası… Önce küçük ve ölçülebilir bir başarı.</small></span></div>
-    <div class="s5 step" data-order="3"><span class="n">3</span><span class="t">Verinizi düzenleyin<small>Katalog, fiyat, stok, müşteri geçmişi: düzenli ve KVKK'ya uygun. Yapay zekânın yakıtı veri.</small></span></div>
-    <div class="s5 step" data-order="4"><span class="n">4</span><span class="t">Ekibinizi eğitin, yetki ve onay kurallarını yazın<small>En sık engel uzmanlık eksikliği. Ajan neyi kendisi yapar, neyi onaya sunar: Bunu baştan belirleyin.</small></span></div>
-    <div class="s5 step" data-order="5"><span class="n">5</span><span class="t">Ürününüzü ajanlar için okunabilir kılın<small>Düzenli ürün bilgisi, güncel fiyat ve stok, açık teslim ve iade koşulları, birden çok dil.</small></span></div>
-  </div>
-  <div class="src">Andrew Ng, AI Transformation Playbook (önce pilot, strateji sonra) · TÜİK (2026) · Gartner (2025)</div>
-  <aside class="notes"><ul>
-    <li>Her tık bir adım; kısa ve net geçin.</li>
-    <li>2: Andrew Ng'nin dönüşüm rehberine göre önce küçük, ölçülebilir bir başarı; büyük strateji sonra gelir.</li>
-    <li>3: Veri gizliliği ilk günden planlanır. Müşteri verisini hangi araca verdiğinizi bilin.</li>
-    <li>4: Ajanlar için “yetki matrisi”: Hangi tutara kadar kendisi karar verir, neyi onaya sunar.</li>
-    <li>5: Gartner'ın %90 tahminini hatırlatın: Sizi bir ajan bulacaksa, ürün bilginizin okunabilir olması gerekir.</li>
-  </ul></aside>
-</section>
-
-<!-- ============ 24 · GÜVEN (BEZOS) ============ -->
-<section class="slide qslide photo" id="guven" data-sec="5" data-title="Değişmeyecek olan: güven" data-target="19:30">
+<!-- ============ 19 · GÜVEN (BEZOS) ============ -->
+<section class="slide qslide photo" id="guven" data-sec="5" data-title="Değişmeyecek olan: güven" data-target="15:00">
   <div class="qbg" data-bg="assets/img/portre/jeff-bezos-buyuk.jpg"></div>
   <div class="qphoto" data-bg="assets/img/portre/jeff-bezos-buyuk.jpg" data-a="fade" style="--d:.1s;background-position:56% 40%"></div>
   <div class="content">
@@ -739,14 +599,14 @@
   <div class="idcard" data-a="up" style="--d:.7s"><div class="nm">Jeff Bezos</div><div class="rl">Amazon'un kurucusu ve yönetim kurulu başkanı</div><div class="when">AWS re:Invent · Werner Vogels ile söyleşi · Kasım 2012</div></div>
   <div class="pcredit">Fotoğraf: Seattle City Council, Amazon Spheres açılışı 2018 · CC BY 2.0 · kırpıldı</div>
   <aside class="notes"><ul>
-    <li>⏱ Hedef: <b>19:30</b>.</li>
+    <li>⏱ Hedef: <b>15:00</b>.</li>
     <li>Bezos'un sorusu: Neyin değişmeyeceğini bilirseniz, stratejiyi onun üzerine kurarsınız. Onun cevabı: düşük fiyat, hızlı teslimat, geniş seçenek.</li>
     <li>(tık) Bizim cevabımız: güven. Kültepe'deki tüccar da güven satıyordu. Değişen şu: Güven artık <b>ölçülüyor</b> ve ajanlar onu okuyor.</li>
   </ul></aside>
 </section>
 
-<!-- ============ 25 · TEŞEKKÜRLER ============ -->
-<section class="slide no-chrome" id="tesekkur" data-title="Teşekkürler · Soru-cevap" data-target="20:00">
+<!-- ============ 20 · TEŞEKKÜRLER ============ -->
+<section class="slide no-chrome" id="tesekkur" data-title="Teşekkürler · Soru-cevap" data-target="15:30">
   <canvas class="globe" data-size="940" style="position:absolute;right:-300px;top:70px;" data-a="blur"></canvas>
   <div class="grow col vcenter">
     <div class="thanks" data-a="up" style="--d:.2s">Teşekkürler.</div>
@@ -760,7 +620,7 @@
     <div class="cover-logos"><img class="y" src="assets/logo/yeniad-logo-beyaz.svg" alt="YENİAD"><i></i><img class="b" src="assets/logo/bss-logo-white.svg" alt="BSS Teknoloji"></div>
   </div>
   <aside class="notes"><ul>
-    <li>⏱ Hedef: <b>20:00</b>. Teşekkür, soru-cevap.</li>
+    <li>⏱ Hedef: <b>15:30</b>. Teşekkür, soru-cevap (kalan süre soru-cevaba).</li>
     <li><b>“Verimiz nereye gidiyor? (KVKK)”</b> → Kurumsal sürümler ve veri işleme sözleşmeleriyle çalışın; müşteri verisini gereksiz yere araçlara vermeyin, anonimleştirin.</li>
     <li><b>“Yapay zekâ yanlış söylerse sorumlu kim?”</b> → Sorumluluk her zaman şirkette. Müşteriye ya da finansal karara giden her çıktı insan onayından geçmeli.</li>
     <li><b>“Küçük firma nereden başlasın, bütçesi ne?”</b> → Abonelikle kullanılan genel araçlarla, tek bir sorunla başlayın; 90 gün ölçün, işe yarayanı büyütün.</li>

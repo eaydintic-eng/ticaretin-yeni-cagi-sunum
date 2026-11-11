@@ -3,7 +3,7 @@
 **Halil Aydın · YENİAD · 12 Kasım 2026, 09.00**
 Yapay zekâ iş dünyasını ve ticaretin geleceğini nasıl şekillendirecek?
 
-İnternetsiz çalışan HTML sunum (25 slayt, yaklaşık 20 dakika), yedek PDF, konuşmacı notları ve tüm araştırma dosyaları.
+İnternetsiz çalışan HTML sunum (20 slayt, yaklaşık 15 dakika + soru-cevap), yedek PDF, konuşmacı notları ve tüm araştırma dosyaları.
 
 ## Hızlı başlangıç
 
@@ -18,10 +18,10 @@ Ayrıntılı kullanım: [`OKU-BENI.txt`](OKU-BENI.txt)
 | Bölüm | Slaytlar |
 |---|---|
 | 01 · Geçmiş | Kültepe (MÖ 1900) · 4.000 yılda ticaretin araçları · 1900 → 1913 ve S eğrisi |
-| 02 · Hızlanma ve geçiş | Teknoloji benimseme eğrileri (Our World in Data) · Yapay zekânın yayılma hızı (St. Louis Fed) · Maliyet (alüminyum ve AI Index) · Hesaplama gücü (Epoch AI) · Türkiye (TÜİK, Eurostat) · Elektrik dersi · Abartı döngüsü (Gartner, McKinsey, PwC) |
-| 03 · Bugün: ajanlar | Yapay zekâ ajanı nedir? · Bir ajan nasıl çalışır? (animasyonlu akış) · Ara → Sor → Yaptır · Dört senaryo |
-| 04 · Gelecek | Kurumların tahminleri · Bill Gates · Jensen Huang · Ajanların iş süresi (METR) · Demis Hassabis · Kardaşev ölçeği |
-| 05 · Yol haritası | İşletmeler için beş adım · Değişmeyecek olan: güven (Jeff Bezos) · Teşekkürler |
+| 02 · Hızlanma ve geçiş | Teknoloji benimseme eğrileri (Our World in Data) · Yapay zekânın yayılma hızı (St. Louis Fed) · Maliyet (alüminyum ve AI Index) · Hesaplama gücü (Epoch AI) · Türkiye (TÜİK, Eurostat) |
+| 03 · Bugün: ajanlar | Yapay zekâ ajanı nedir? · Bir ajan nasıl çalışır? (animasyonlu akış) · Ara → Sor → Yaptır |
+| 04 · Gelecek | Kurumların tahminleri · Bill Gates · Jensen Huang · Ajanların iş süresi (METR) · Demis Hassabis |
+| 05 · Yol haritası | Değişmeyecek olan: güven (Jeff Bezos) · Teşekkürler |
 
 ## Klasörler
 

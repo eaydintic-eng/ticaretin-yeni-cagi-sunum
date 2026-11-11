@@ -22,41 +22,49 @@
 
   const D = {};
 
+  // sadeleştirilmiş görünüm: 8 seri yerine 5 seri; her birinin %50 eşiğini geçtiği nokta işaretli
+  // (otomobil, radyo ve bilgisayar serileri ham dosyada duruyor: OW.oto, OW.rad, OW.pc)
+  const cross = (obj, lvl = 50) => { const e = Object.entries(obj).map(([y, v]) => [+y, v]); for (let i = 1; i < e.length; i++) if (e[i][1] >= lvl) { const [x0, y0] = e[i - 1], [x1, y1] = e[i]; return x0 + (lvl - y0) / (y1 - y0) * (x1 - x0); } return null; };
+  const OWS = [
+    { k: 'tel', name: 'Sabit telefon', color: '#8FA2B4', w: 4, d: .3, dur: 2.4, label: { text: 'Sabit telefon', at: 1935, dx: 0, dy: 42, anchor: 'middle' } },
+    { k: 'elk', name: 'Elektrik', color: '#E7B65C', w: 4, d: .6, dur: 2.0, label: { text: 'Elektrik', at: 1921, dx: -14, dy: -4, anchor: 'end' } },
+    { k: 'ctv', name: 'Renkli TV', color: '#4FC1B0', w: 5, d: 1.0, dur: 1.4, label: { text: 'Renkli TV', at: 1969, dx: -14, dy: 6, anchor: 'end' } },
+    { k: 'net', name: 'İnternet', color: '#5AA7F2', w: 5, d: 1.4, dur: 1.4, label: { text: 'İnternet', at: 2016, dx: 14, dy: 8 } },
+    { k: 'cep', name: 'Cep telefonu', color: '#EF5B5B', w: 5, d: 1.7, dur: 1.4, label: { text: 'Cep telefonu', at: 2019, dx: -6, dy: -22, anchor: 'end' } }
+  ];
   D.owid = {
-    w: 1140, h: 580, pad: { l: 70, r: 40, t: 30, b: 56 },
+    w: 1060, h: 600, pad: { l: 70, r: 40, t: 30, b: 56 },
     x: { min: 1900, max: 2022, ticks: [1900, 1920, 1940, 1960, 1980, 2000, 2020] },
     y: { min: 0, max: 100, ticks: [0, 25, 50, 75, 100], fmt: v => '%' + v, zero: 0 },
-    series: [
-      { name: 'Sabit telefon', color: '#8FA2B4', pts: pick(OW.tel), w: 3, d: .3, dur: 2.6, label: { text: 'Sabit telefon', at: 1940, dx: 24, dy: 44, anchor: 'middle' } },
-      { name: 'Elektrik', color: '#E7B65C', pts: pick(OW.elk), w: 3, d: .5, dur: 2.2, label: { text: 'Elektrik', at: 1923, dx: -12, dy: -6, anchor: 'end' } },
-      { name: 'Otomobil', color: '#C9A27A', pts: pick(OW.oto), w: 3, d: .7, dur: 2.4, label: { text: 'Otomobil', at: 1952, dx: 14, dy: 30 } },
-      { name: 'Radyo', color: '#A58BE8', pts: pick(OW.rad), w: 3, d: .9, dur: 1.6, label: { text: 'Radyo', at: 1932, dx: 18, dy: 16 } },
-      { name: 'Renkli TV', color: '#4FC1B0', pts: pick(OW.ctv), w: 3.5, d: 1.2, dur: 1.6, label: { text: 'Renkli TV', at: 1968, dx: -12, dy: 4, anchor: 'end' } },
-      { name: 'Bilgisayar', color: '#5AA7F2', pts: pick(OW.pc), w: 3.5, d: 1.5, dur: 1.6, label: { text: 'Bilgisayar', at: 1989, dx: -12, dy: 6, anchor: 'end' } },
-      { name: 'İnternet', color: '#1F8FFF', pts: pick(OW.net), w: 4.5, d: 1.8, dur: 1.4, label: { text: 'İnternet', at: 2016, dx: 12, dy: 8 } },
-      { name: 'Cep telefonu', color: '#EF5B5B', pts: pick(OW.cep), w: 4.5, d: 2.0, dur: 1.4, label: { text: 'Cep telefonu', at: 2019, dx: -8, dy: -16, anchor: 'end' } }
-    ],
-    anns: [
-      { x: 1900.5, y: 50, text: 'Hanelerin yarısı', dx: 6, dy: -10, color: '#8FA2B4', d: .2 }
-    ]
+    hlines: [{ y: 50, text: 'Hanelerin yarısı', color: '#C9D2DB', d: .2 }],
+    series: OWS.map(s => Object.assign({ pts: pick(OW[s.k]) }, s)),
+    anns: OWS.map(s => ({ x: cross(OW[s.k]), y: 50, text: '', dot: true, r: 9, color: s.color, d: s.d + s.dur * .7 }))
   };
 
   /* --- St. Louis Fed GenAI Adoption Tracker: çıkıştan bu yana geçen yıl → kullanan yetişkin (%) — genai-tracker-pc-internet.csv --- */
   D.genai = {
-    w: 760, h: 520, pad: { l: 70, r: 40, t: 24, b: 60 },
-    x: { min: 0, max: 12, ticks: [0, 2, 4, 6, 8, 10, 12], fmt: v => v + '. yıl' },
+    w: 1060, h: 600, pad: { l: 70, r: 40, t: 24, b: 60 },
+    x: { min: 0, max: 12, ticks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], fmt: v => v === 0 ? 'Çıkış' : String(v) },
     y: { min: 0, max: 80, ticks: [0, 20, 40, 60, 80], fmt: v => '%' + v, zero: 0 },
+    // 4. yıl vurgusu: üç teknolojiyi aynı yaşta karşılaştır
+    bands: [{ x0: 3.6, x1: 4.4, fill: 'rgba(239,91,91,.10)', text: '', d: 1.6 }],
     series: [
-      { name: 'İnternet', color: '#5AA7F2', w: 4, d: .3, dur: 1.8, dots: false,
+      { name: 'İnternet', color: '#5AA7F2', w: 5, d: .3, dur: 1.8, dots: false,
         pts: [[0, 9.24], [1, 16.42], [2, 21.62], [3, 30.09], [4, 35.85], [5, 43.08], [6, 49.08], [7, 58.79], [8, 61.7], [9, 64.76], [10, 67.97], [11, 68.93], [12, 75]],
-        label: { text: 'İnternet (1995 →)', at: 10, dx: 0, dy: 38, anchor: 'middle' } },
-      { name: 'PC', color: '#8FA2B4', w: 4, d: .5, dur: 1.8, dots: true, r: 6,
+        label: { text: 'İnternet (1995)', at: 9, dx: 10, dy: 40, anchor: 'start' } },
+      { name: 'PC', color: '#8FA2B4', w: 4, d: .5, dur: 1.8, dots: true, r: 6, dash: '10 8',
         pts: [[3, 19.72], [8, 31.1], [12, 39.88]],
-        label: { text: 'Kişisel bilgisayar (1981 →)', at: 12, dx: -6, dy: -22, anchor: 'end' } },
-      { name: 'Üretken yapay zekâ', color: '#EF5B5B', w: 6, d: .9, dur: 1.2, dots: true, r: 8,
+        label: { text: 'Kişisel bilgisayar (1981)', at: 8, dx: 0, dy: 46, anchor: 'middle' } },
+      { name: 'Üretken yapay zekâ', color: '#EF5B5B', w: 7, d: .9, dur: 1.2, dots: true, r: 9,
         pts: [[2, 45.48], [3, 52.6], [4, 60.05]],
-        label: { text: 'Üretken yapay zekâ (2022 →)', at: 4, dx: -20, dy: -26, anchor: 'middle' },
-        pl: [[4, 60.05, '%60', 18, 8, 'start', '#EF5B5B']] }
+      }
+    ],
+    anns: [
+      { x: 0.25, y: 64, text: 'Üretken yapay zekâ\n(ChatGPT, 2022)', color: '#EF5B5B', d: 1.8, cls: 'lbl2', lh: 29 },
+      { x: 4, y: 60.05, text: '%60', dx: 28, dy: 10, color: '#EF5B5B', bold: true, d: 2.2, cls: 'big' },
+      { x: 4, y: 35.85, text: '%36', dx: 28, dy: 10, color: '#5AA7F2', bold: true, dot: true, r: 9, d: 2.4, cls: 'big' },
+      { x: 3, y: 19.72, text: '%20', dx: 0, dy: 44, anchor: 'middle', color: '#C9D2DB', bold: true, d: 2.6, cls: 'big' },
+      { x: 4, y: 78, text: '4. yıl', dx: 0, dy: 0, anchor: 'middle', color: '#EF5B5B', bold: true, d: 1.6 }
     ]
   };
 

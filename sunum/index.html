@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ticaretin Yeni Çağı · Halil Aydın · YENİAD</title>
+<link rel="stylesheet" href="assets/deck.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="vignette"></div>
+
+<!-- ortak SVG simgeler -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-quote" viewBox="0 0 110 84"><path d="M0 84V50C0 22 14 5 42 0l5 11C31 16 24 26 23 40h21v44H0zm63 0V50c0-28 14-45 42-50l5 11c-16 5-23 15-24 29h21v44H63z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 46 46"><path d="M8 23h30M27 12l11 11-11 11" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16l5.5 5.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-ship" viewBox="0 0 32 32"><path d="M4 20h24l-3 7H7z"/><path d="M8 20v-7h16v7M12 13V8h8v5M16 4v4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 32 32"><path d="M4 10l12-6 12 6v12l-12 6-12-6z"/><path d="M4 10l12 6 12-6M16 16v12"/></symbol>
+    <symbol id="i-shop" viewBox="0 0 32 32"><path d="M5 12l2-7h18l2 7"/><path d="M5 12c0 2 1.5 3.5 3.7 3.5S12.3 14 12.3 12c0 2 1.5 3.5 3.7 3.5S19.7 14 19.7 12c0 2 1.5 3.5 3.6 3.5S27 14 27 12"/><path d="M7 16v11h18V16M13 27v-7h6v7"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 32 32"><path d="M4 27V14l7 4v-4l7 4v-4l7 4V6h3v21z"/><path d="M9 23h2M15 23h2M21 23h2"/></symbol>
+  </defs>
+</svg>
+
+<main class="stage">
+
+<!-- ============ 1 · KAPAK ============ -->
+<section class="slide no-foot" id="kapak" data-title="Kapak · Ticaretin Yeni Çağı" data-target="0:45">
+  <canvas class="globe" data-size="1040" style="position:absolute;right:-170px;top:20px;" data-a="blur"></canvas>
+  <div class="logos" data-a="down" style="--d:.2s">
+    <img class="logo-yeniad" src="assets/logo/yeniad-logo-beyaz.svg" alt="YENİAD">
+    <span class="sep"></span>
+    <img class="logo-bss" src="assets/logo/bss-logo-white.svg" alt="BSS Technology">
+  </div>
+  <div class="grow col vcenter" style="max-width:1150px">
+    <div class="eyebrow" data-a="left" style="--d:.35s">Yapay zekâ ve iş dünyası</div>
+    <h1 class="h-mega lines mt-m" style="--d:.45s"><span>TİCARETİN</span><span>YENİ ÇAĞI</span></h1>
+    <p class="lead mt-m" data-a="up" style="--d:1s;max-width:980px">Yapay zekâ iş dünyasını ve ticaretin geleceğini nasıl şekillendirecek?</p>
+  </div>
+  <div class="row" style="align-items:flex-end;justify-content:space-between">
+    <div data-a="up" style="--d:1.25s">
+      <div class="h3" style="font-size:46px">Halil Aydın</div>
+      <div class="small mt-s" style="font-size:24px">Yüksek Bilgisayar Mühendisi · BSS Teknoloji CEO'su · YENİAD Başkan Yardımcısı</div>
+    </div>
+    <div class="pill" data-a="up" style="--d:1.4s"><span class="dot"></span>12 Kasım 2026</div>
+  </div>
+  <aside class="notes"><ul>
+    <li>Selam ve teşekkür. Kısa tanıtım: BSS, yazılım, sahada gördüklerimiz. <b>En fazla 45 saniye.</b></li>
+    <li>"Bugün teknik bir konuşma yapmayacağım; ticaret konuşacağız."</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 2 · KÜLTEPE ============ -->
+<section class="slide" id="kultepe" data-title="Kültepe: 4.000 yıllık tüccar mektubu">
+  <img src="assets/img/kultepe-tablet-mektup.jpg" alt="Kültepe'den Asurlu bir tüccar mektubu" data-a="blur" style="--d:.3s;position:absolute;right:60px;top:150px;height:740px;mix-blend-mode:lighten;z-index:0;-webkit-mask-image:radial-gradient(closest-side,#000 78%,transparent);mask-image:radial-gradient(closest-side,#000 78%,transparent)">
+  <div class="ph-credit" style="right:90px;bottom:90px;text-align:right">Kültepe'den Asurlu bir tüccar mektubu · Metropolitan Museum of Art, 66.245.1</div>
+  <div class="content" style="max-width:1020px">
+    <div class="eyebrow" data-a="left">Kayseri · Kültepe (Kaniş) · MÖ 19. yüzyıl</div>
+    <h2 class="h-xl lines mt-m" style="--d:.2s;font-size:96px"><span>4.000 yıl önce</span><span class="coral">bir tüccar mektubu</span></h2>
+    <p class="serif mt-m" data-a="up" style="--d:.8s;font-size:56px;line-height:1.1;max-width:1000px">“Gönderdiğin ince kumaştan <span class="coral">daha çok yap.</span>”</p>
+    <p class="body mt-s" data-a="up" style="--d:1s;max-width:980px">Asurlu tüccar Puzur-Aššur'dan Waqqurtum'a: Satış bu kumaşla artıyor. Dokuyamıyorsan satın al; kâr azalır ama satış artar. <span class="muted">Kültepe'de bulunan 23.000'den fazla tabletin çoğu böyle ticari mektup, sözleşme ve hesap.</span></p>
+    <div class="grow"></div>
+    <div class="triad step" data-order="1"><span>Bilgi</span><i></i><span>Güven</span><i></i><span>Alışveriş</span></div>
+    <p class="h3 mt-m step muted" data-order="2" style="font-weight:600">Ticaretin özü 4.000 yıldır değişmedi.</p>
+  </div>
+  <div class="src">UNESCO Dünya Belleği: Kültepe Eski Asur Tüccar Arşivleri (2015) · Archaeology Magazine, “Assyrian Women of Letters” (C. Michel)</div>
+  <aside class="notes"><ul>
+    <li>Dünyanın bilinen en eski ticari arşivlerinden biri <b>Kayseri'de</b>, yaklaşık 4.000 yıl önce.</li>
+    <li>Saray ya da tapınak kaydı değil; sıradan tüccarların mektupları. Fiyat, sipariş, borç, ortaklık.</li>
+    <li>Bir tüccar yazıyor: "Gönderdiğin ince kumaştan daha çok yap." Kalite, talep, kâr marjı… (Ekrandaki <b>böyle bir</b> tablet; o mektubun kendisi değil.)</li>
+    <li>(tık) Üç şey: <b>bilgi</b> (nerede ne var, kaça), <b>güven</b> (kime veririm), <b>alışveriş</b>.</li>
+    <li>(tık) "Bu üçü hiç değişmedi. Değişen hep <b>araç</b> oldu."</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 3 · 1900 → 1913 ============ -->
+<section class="slide no-foot t-fade" id="cadde" data-title="1900 → 1913: Önce yavaş yavaş, sonra birdenbire">
+  <div class="ph p1900"><img src="assets/img/1900-kirpik.jpg" alt="New York, 5. Cadde, 1900"><span class="ring step r1900" data-order="1" style="left:69.6%;top:55.4%;--rw:130px;--rh:120px"></span></div>
+  <div class="ph p1913"><img src="assets/img/1913-kirpik.jpg" alt="New York, 5. Cadde, 1913"><span class="ring step r1913" data-order="3" style="left:55.5%;top:63.5%;--rw:270px;--rh:230px"></span></div>
+  <div class="yearbox y1900" data-a="left" style="--d:.4s"><div class="yr">1900</div><div class="q">Otomobili bulabilir misiniz?</div></div>
+  <div class="yearbox y1913"><div class="yr coral">1913</div><div class="q">Peki şimdi atı bulun.</div></div>
+  <i class="step s1913" data-order="2"></i>
+  <div class="finale step" data-order="4" data-s="fade">
+    <div class="h-mega" style="font-size:260px">13 yıl.</div>
+    <p class="serif mt-m" style="font-size:84px;line-height:1.05">“Önce yavaş yavaş, <span class="coral">sonra birdenbire.</span>”</p>
+    <p class="small mt-s" style="font-size:26px">Ernest Hemingway · Güneş de Doğar (1926), iflasın nasıl geldiğini anlatırken</p>
+  </div>
+  <div class="ph-credit">New York, 5. Cadde · 1900: ABD Ulusal Arşivleri · 1913: Library of Congress, Bain Koleksiyonu</div>
+  <aside class="notes"><ul>
+    <li>New York, Beşinci Cadde, 1900 Paskalya sabahı. "Otomobili bulabilir misiniz?" (tık → halka)</li>
+    <li>(tık) Aynı cadde, <b>1913</b>. "Peki şimdi atı bulun." (tık → halka)</li>
+    <li>(tık) Sadece 13 yıl. Hemingway'in iflas tarifi: "Önce yavaş yavaş, sonra birdenbire."</li>
+    <li>İnsanlar yine yolculuk etti, yük yine taşındı. <b>Öz aynı, araç değişti.</b></li>
+  </ul></aside>
+</section>
+
+<!-- ============ 4 · TEZ ============ -->
+<section class="slide t-zoom" id="tez" data-title="Bu kez araç düşünebiliyor">
+  <div class="grow col vcenter">
+    <h2 class="h-xl lines" style="--d:.2s;font-size:118px"><span class="muted">Ticaretin özü değişmiyor.</span><span>Aracı değişiyor.</span></h2>
+    <h2 class="h-xl mt-l step" data-order="1" data-s="blur" style="font-size:150px"><span class="hl-red">Bu kez araç düşünebiliyor.</span></h2>
+  </div>
+  <aside class="notes"><ul>
+    <li>Tüm konuşmanın tezi bu. Yavaş ve net söyleyin.</li>
+    <li>(tık) "Kervan, gemi, telgraf, internet… hepsi bilgiyi taşıdı. Yapay zekâ ise bilgiyi <b>işliyor</b>: okuyor, karşılaştırıyor, öneriyor, iş yapıyor."</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 5 · HER DALGA YARI SÜREDE ============ -->
+<section class="slide" id="dalga" data-title="Her dalga yarı sürede yayılıyor">
+  <div class="eyebrow" data-a="left">Neden şimdi? · Hız</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Her teknoloji dalgası, bir öncekinin<br>yarısı kadar sürede yayılıyor</h2>
+  <div class="row mt-l" style="gap:80px;align-items:flex-start">
+    <div style="flex:1.35">
+      <div class="small" data-a="fade" style="margin-bottom:22px;letter-spacing:.06em">ABD'de hanelerin yarısına ulaşma süresi</div>
+      <div class="bars">
+        <div class="bar-row" style="--w:100%;--d:.5s"><span class="lab">Elektrik çağı</span><span class="track"><span class="fill"></span></span><span class="val">42 yıl</span></div>
+        <div class="bar-row" style="--w:47.6%;--d:.7s"><span class="lab">Kişisel bilgisayar</span><span class="track"><span class="fill"></span></span><span class="val">20 yıl</span></div>
+        <div class="bar-row" style="--w:28.6%;--d:.9s"><span class="lab">İnternet</span><span class="track"><span class="fill"></span></span><span class="val">12 yıl</span></div>
+        <div class="bar-row" style="--w:14.3%;--d:1.1s"><span class="lab">Mobil internet</span><span class="track"><span class="fill"></span></span><span class="val">6 yıl</span></div>
+        <div class="bar-row hot" style="--w:7.1%;--d:1.4s"><span class="lab">Yapay zekâ</span><span class="track"><span class="fill"></span></span><span class="val">3 yıl?</span></div>
+      </div>
+      <div class="pill mt-m" data-a="up" style="--d:1.8s"><span class="dot"></span>ChatGPT: haftada&nbsp;<b>900 milyon</b>&nbsp;kullanıcı (Şubat 2026)</div>
+    </div>
+    <div class="step card" data-order="1" style="flex:1;padding:44px 48px">
+      <div class="eyebrow plain" style="color:var(--sky)">Türkiye · TÜİK 2026</div>
+      <div class="mt-s" style="display:flex;align-items:center;gap:18px">
+        <span class="muted" style="font:700 50px/1 var(--display)">%19,2</span>
+        <svg viewBox="0 0 46 46" width="54" height="54" style="stroke:var(--coral);fill:none;stroke-width:3.5;flex:none"><use href="#i-arrow"/></svg>
+        <span class="coral" style="font:800 116px/1 var(--display);letter-spacing:-.04em">%<span data-count="37.6" data-dec="1" data-from="19.2" data-dur="1600">37,6</span></span>
+      </div>
+      <p class="body mt-s">Üretken yapay zekâ kullanan bireylerin oranı bir yılda <b>neredeyse ikiye katlandı.</b></p>
+    </div>
+  </div>
+  <div class="src">BOND, Trends – Artificial Intelligence (Mayıs 2025, Morgan Stanley verisi; yapay zekâ için tahmin) · OpenAI (Şubat 2026) · TÜİK, Yapay Zekâ İstatistikleri 2026</div>
+  <aside class="notes"><ul>
+    <li>Elektrik 42 yıl, bilgisayar 20, internet 12, mobil 6… Yapay zekâ için tahmin 3 yıl. Her dalga bir öncekinin yarısı.</li>
+    <li>(tık) Türkiye de aynı hızda: üretken yapay zekâ kullanan birey oranı bir yılda %19'dan %38'e.</li>
+    <li>"Her 10 yetişkinden 4'e yakını kullanıyor. Çalışanlarınızın bir kısmı da muhtemelen size söylemeden kullanıyor."</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 6 · ALÜMİNYUM ============ -->
+<section class="slide" id="aluminyum" data-title="Zekâ, alüminyum gibi ucuzluyor">
+  <div class="bgimg" data-bg="assets/img/aluminyum-folyo.jpg" style="opacity:.16;background-color:transparent;filter:grayscale(1)" data-a="fade"></div>
+  <div class="shade left"></div>
+  <div class="content">
+    <div class="eyebrow" data-a="left">Neden şimdi? · Maliyet</div>
+    <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Zekâ, alüminyum gibi ucuzluyor</h2>
+    <div class="row mt-l grow" style="gap:90px;align-items:flex-start">
+      <div class="ladder" style="flex:1" data-stagger=".25" data-base=".4">
+        <div class="rung" data-a="up"><div class="y">1850'ler</div><div class="t">Gümüş fiyatında, değerli bir metal. Rivayete göre III. Napolyon en önemli misafirlerine alüminyum çatal sunuyor.</div></div>
+        <div class="rung" data-a="up"><div class="y">1884</div><div class="t">Washington Anıtı'nın tepesine “değerli metal” olarak konuyor.</div></div>
+        <div class="rung" data-a="up"><div class="y">1886 → 1891</div><div class="t">Elektrolizle ucuz üretim yöntemi bulunuyor; libresi 1 doların altına iniyor.</div></div>
+        <div class="rung hot" data-a="up"><div class="y">Bugün</div><div class="t">Kullanıp attığımız folyo.</div></div>
+      </div>
+      <div class="step" data-order="1" style="flex:1">
+        <div class="eyebrow plain" style="color:var(--sky)">Yapay zekâ</div>
+        <div class="bigstat hl-red mt-s" style="font-size:260px"><span data-count="280" data-dur="1800">280</span><span style="font-size:.42em;letter-spacing:0"> kat</span></div>
+        <p class="lead mt-s">Aynı kalitede bir yapay zekâ cevabı iki yılda <b>yaklaşık 280 kat</b> ucuzladı.</p>
+        <p class="body mt-s muted">Ucuzlayan şey her yere girer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="src">Stanford HAI, AI Index 2025 (GPT-3.5 düzeyi; Kasım 2022 → Ekim 2024) · Science History Institute, Distillations · Sequoia, AI Ascent 2026</div>
+  <aside class="notes"><ul>
+    <li>Alüminyum 1850'lerde gümüş fiyatındaydı; rivayete göre III. Napolyon en önemli misafirlerine alüminyum çatal sunardı. 1884'te Washington Anıtı'nın tepesine "değerli metal" olarak kondu.</li>
+    <li>Elektroliz bulununca fiyat çöktü; bugün folyo. <b>Değerli olan şey sıradanlaştı ve her yere girdi.</b></li>
+    <li>(tık) Zekâ da böyle: iki yılda yaklaşık 280 kat ucuzladı. "Bir sayfa çeviri artık kuruşlar tutuyor."</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 7 · ASİSTANDAN AJANA ============ -->
+<section class="slide" id="ajan" data-title="Asistandan ajana: daha hızlı at değil, araba">
+  <div class="eyebrow" data-a="left">Bir kavram</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Daha hızlı at değil, <span class="coral">araba</span></h2>
+  <div class="row mt-l" style="gap:40px;align-items:stretch">
+    <div class="card" data-a="up" style="--d:.35s;flex:1">
+      <div class="num">DÜN · ASİSTAN</div>
+      <h3>Soruya cevap verir</h3>
+      <p>Yazar, özetler, çevirir. İşi siz yaparsınız; o size yardım eder.</p>
+      <div class="mt-m" style="font:800 52px/1.05 var(--display);color:var(--sky)">İşinizi hızlandırır.</div>
+    </div>
+    <div class="jarrow" data-a="scale" style="--d:.6s"><svg><use href="#i-arrow"/></svg></div>
+    <div class="card step" data-order="1" style="flex:1;border-color:rgba(239,91,91,.45)">
+      <div class="num">ŞİMDİ BAŞLIYOR · AJAN</div>
+      <h3>Sizin adınıza iş yapar</h3>
+      <p>Araştırır, karşılaştırır, form doldurur, sipariş hazırlar. Siz yön verir, onaylarsınız.</p>
+      <div class="mt-m" style="font:800 52px/1.05 var(--display);color:var(--coral)">İşi sizin yerinize yapar.</div>
+    </div>
+  </div>
+  <div class="pill mt-l step" data-order="2" style="align-self:flex-start;font-size:28px;padding:18px 30px"><span class="dot"></span><b>Ajan</b>&nbsp;= sizin adınıza, sizin kurallarınızla iş yapan yazılım</div>
+  <div class="src">Sequoia Capital, AI Ascent 2026 açılış konuşması (“Daha hızlı atlar değil, arabalar”)</div>
+  <aside class="notes"><ul>
+    <li>Sequoia'nın benzetmesi: ihtiyaç daha hızlı at değil, araba.</li>
+    <li>Bugüne kadar bildiğimiz <b>asistan</b>: sorarsınız, cevaplar; atı hızlandırır.</li>
+    <li>(tık) Yeni olan <b>ajan</b>: bir işi baştan sona sizin adınıza yürütür. Araba bu.</li>
+    <li>(tık) Bu kelimeyi konuşma boyunca bu anlamda kullanacağım: <b>sizin adınıza iş yapan yazılım.</b></li>
+  </ul></aside>
+</section>
+
+<!-- ============ 8 · HARİTA ============ -->
+<section class="slide" id="harita" data-title="Üç soru" data-target="5:30">
+  <div class="eyebrow" data-a="left">Bugünkü yol haritamız</div>
+  <div class="agenda mt-l" data-stagger=".15" data-base=".2">
+    <div class="ag" data-a="left"><span class="n">01</span><span class="t">Ticaret nasıl değişiyor?</span><span class="s">Yeni iş modelleri</span></div>
+    <div class="ag" data-a="left"><span class="n">02</span><span class="t">Şirketler nasıl değişiyor?</span><span class="s">Akıllı şirketler</span></div>
+    <div class="ag" data-a="left"><span class="n">03</span><span class="t">Rekabet nasıl değişiyor?</span><span class="s">Yeni dengeler · Türkiye</span></div>
+    <div class="ag last" data-a="left"><span class="n">04</span><span class="t">Pazartesi sabahı ne yapmalı?</span><span class="s">Beş adım</span></div>
+  </div>
+  <aside class="notes"><ul>
+    <li>⏱ Bu slayt bittiğinde hedef: <b>5:30</b>.</li>
+    <li>Afişte söz verdiğimiz üç başlık: iş modelleri, akıllı şirketler, rekabet. Sonunda somut beş adım.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 9 · ARA → SOR → YAPTIR ============ -->
+<section class="slide" id="yolculuk" data-title="Ara → Sor → Yaptır">
+  <div class="eyebrow" data-a="left">01 · Ticaret nasıl değişiyor?</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Arama çubuğu dönemi <span class="coral">bitiyor</span></h2>
+  <p class="serif mt-s" data-a="up" style="--d:.25s;font-size:31px;line-height:1.2;color:var(--ink-2)">“Yıllardır e-ticaret, bir arama çubuğu ve uzun bir ürün listesinden ibaretti. Bu değişmek üzere.”<span class="small" style="display:block;font-family:var(--text);font-style:normal;margin-top:4px">Doug McMillon, Walmart'ın o dönemki CEO'su (Ekim 2025)</span></p>
+  <div class="journey mt-m">
+    <div class="jcol" data-a="up" style="--d:.35s">
+      <div class="jhead"><span class="verb">Ara</span><span class="era">2000 – 2022</span></div>
+      <div class="mock">
+        <div class="search"><svg><use href="#i-search"/></svg>ergonomik ofis sandalyesi toptan</div>
+        <div class="res"><i></i><i></i></div><div class="res"><i></i><i></i></div><div class="res"><i></i><i></i></div><div class="res"><i></i><i></i></div>
+        <div class="small" style="margin-top:auto">10 link, 15 sekme, saatler.</div>
+      </div>
+    </div>
+    <div class="jarrow step" data-order="1"><svg><use href="#i-arrow"/></svg></div>
+    <div class="jcol step" data-order="1">
+      <div class="jhead"><span class="verb">Sor</span><span class="era">2023 – 2025</span></div>
+      <div class="mock">
+        <div class="bubble">20 kişilik ofis için, tanesi 5.000 TL'nin altında en iyi 3 sandalye hangisi?</div>
+        <div class="answer">Bel desteği, garanti süresi ve yorumlara göre üç öneri, karşılaştırmalı tabloyla…</div>
+        <div class="small" style="margin-top:auto">Tek cevap, karşılaştırmalı.</div>
+      </div>
+    </div>
+    <div class="jarrow step" data-order="2"><svg><use href="#i-arrow"/></svg></div>
+    <div class="jcol now step" data-order="2">
+      <div class="jhead"><span class="verb">Yaptır</span><span class="era">BAŞLIYOR</span></div>
+      <div class="mock">
+        <div class="bubble">Bütçe 100 bin TL. En uygun tedarikçiden 20 adet al, cuma teslim olsun.</div>
+        <div class="task done"><span class="ck">✓</span>14 tedarikçi tarandı</div>
+        <div class="task done"><span class="ck">✓</span>Stok ve teslim tarihi doğrulandı</div>
+        <div class="task done"><span class="ck">✓</span>Sipariş hazır: 96.400 TL, perşembe</div>
+        <div class="confirm">Onayınızı bekliyor →</div>
+      </div>
+    </div>
+  </div>
+  <div class="row step" data-order="3" style="align-items:center;justify-content:flex-end;gap:24px;margin-top:26px">
+    <span class="small">ABD, 2025 yılbaşı alışveriş sezonu:</span>
+    <span class="pill"><b class="coral" style="font-size:30px">+%693</b>&nbsp;yapay zekâdan gelen alışveriş trafiği</span>
+    <span class="pill"><b class="sky" style="font-size:30px">%31</b>&nbsp;daha yüksek satın alma oranı</span>
+  </div>
+  <div class="src">Walmart basın bülteni (14 Ekim 2025) · Adobe Analytics, ABD 2025 tatil sezonu (Ocak 2026) · Örnek senaryo</div>
+  <aside class="notes"><ul>
+    <li>Walmart'ın CEO'su bunu söyledi; dünyanın en büyük perakendecisi. 20 yıl boyunca: arama kutusu, 10 link, 15 sekme. (tık)</li>
+    <li>Son iki yıl: soruyoruz, tek ve karşılaştırmalı cevap alıyoruz. (tık)</li>
+    <li>Şimdi: <b>yaptırıyoruz</b>. Ajan tarar, doğrular, siparişi hazırlar; siz onaylarsınız. (tık)</li>
+    <li>ABD'de yapay zekâdan gelen alışveriş trafiği %693 arttı (yaklaşık 8 katına çıktı); bu ziyaretçilerin satın alma oranı %31 daha yüksek.</li>
+    <li><b>Mutlaka söyleyin:</b> "Yaptır" daha başında. ChatGPT içinden ödeme denemesi Mart 2026'da geri çekildi. Ama Visa Avrupa'da ajan ödemelerini açtı; Google ve Mastercard altyapıyı kuruyor. Yol belli, deneyim oturuyor.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 10 · YENİ MÜŞTERİ ============ -->
+<section class="slide" id="musteri" data-title="Yeni müşteriniz bir yazılım olabilir">
+  <div class="eyebrow" data-a="left">01 · Ticaret nasıl değişiyor?</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Yeni müşteriniz bir <span class="coral">yazılım</span> olabilir</h2>
+  <div class="row mt-l grow" style="gap:90px;align-items:flex-start">
+    <div style="flex:.9;--d:.3s" data-a="up">
+      <div class="bigstat hl-red" style="font-size:280px">%<span data-count="90" data-delay="300">90</span></div>
+      <div class="pill mt-m" style="font-size:20px">Gartner tahmini · 2028</div>
+      <p class="lead mt-m">2028'e kadar işletmeler arası (B2B) satın almaların <b>%90'ına</b> yapay zekâ ajanlarının aracılık etmesi bekleniyor.</p>
+    </div>
+    <div class="step" data-order="1" style="flex:1.1">
+      <div class="h3" style="margin-bottom:22px">Ürününüz ajanlarca <span class="coral">okunabilir</span> mi?</div>
+      <div class="checklist">
+        <div class="ci"><span class="bx empty"></span><span>Ürün bilgileri düzenli mi?<small>Ölçü, malzeme, sertifika, menşe</small></span></div>
+        <div class="ci"><span class="bx empty"></span><span>Fiyat ve stok güncel mi, erişilebilir mi?</span></div>
+        <div class="ci"><span class="bx empty"></span><span>Teslim süresi ve iade koşulları açık mı?</span></div>
+        <div class="ci"><span class="bx empty"></span><span>Kataloğunuz birden çok dilde mi?</span></div>
+        <div class="ci"><span class="bx empty"></span><span>Yorumlarınız ve belgeleriniz dijital mi?</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="src">Gartner, Top Predictions for 2026 and Beyond (21 Ekim 2025)</div>
+  <aside class="notes"><ul>
+    <li>Salonun çoğu işletmelere satıyor: toptancı, üretici, ihracatçı. Asıl dönüşüm burada.</li>
+    <li>Gartner: 2028'e kadar B2B alımların %90'ına ajanlar aracılık edecek. <b>Tahmin</b>, ama yön net. (McKinsey de 2030'a kadar dünyada 3-5 trilyon dolarlık ajan aracılı alışveriş öngörüyor.)</li>
+    <li>(tık) Sizi artık bir satın almacı değil, onun ajanı bulacak. Ajan vitrine bakmaz; <b>veriyi okur</b>. "Kutuları içinizden işaretleyin."</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 11 · ÜÇ İŞ MODELİ ============ -->
+<section class="slide" id="modeller" data-title="2030'a doğru üç yeni iş modeli">
+  <div class="eyebrow" data-a="left">01 · Ticaret nasıl değişiyor?</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">2030'a doğru üç yeni iş modeli</h2>
+  <div class="row mt-l" style="gap:32px;align-items:stretch" data-stagger=".16" data-base=".3">
+    <div class="card" data-a="up" style="flex:1"><div class="num">01 · FİYATLAMA</div><h3>Ürün değil, sonuç satmak</h3><p>Lisans ya da saat değil; çözülen iş kadar ödeme.</p><span class="tag">Intercom Fin: çözülen talep başına 0,99 $</span></div>
+    <div class="card" data-a="up" style="flex:1"><div class="num">02 · ORGANİZASYON</div><h3>Küçük ekip, büyük ölçek</h3><p>Az kişiyle çok iş. Çalışan başına gelir yeniden tanımlanıyor.</p><span class="tag">Lovable (İsveçli yazılım girişimi): 146 kişiyle yıllıklandırılmış 400 milyon $ gelir</span></div>
+    <div class="card" data-a="up" style="flex:1"><div class="num">03 · PAZAR</div><h3>Hizmet pazarı yazılıma açılıyor</h3><p>Çeviri, muhasebe, tasarım, destek: artık “yapılmış iş” olarak satılıyor.</p><span class="tag">Sequoia tahmini: yazılıma harcanan her 1 dolara karşılık hizmete 6 dolar</span></div>
+  </div>
+  <div class="src">Intercom · TechCrunch (Mart 2026) · Sequoia Capital, “Services: The New Software” (2026)</div>
+  <aside class="notes"><ul>
+    <li>01: Yazılım değil iş satılıyor; müşteri sonuç kadar ödüyor.</li>
+    <li>02: Küçük ekipler dev işler yapıyor; 146 kişilik bir şirket 400 milyon dolarlık gelir hızına ulaştı.</li>
+    <li>03: Hizmete harcanan para yazılımın katları; o pazar şimdi yazılıma açılıyor.</li>
+    <li>Benedict Evans'ın merdiveni: önce <b>benimseriz</b> (eski işi yeni araçla yaparız), sonra <b>geliştiririz</b> (yeni ürün), en son sektör <b>dönüşür</b>. Çoğumuz hâlâ ilk basamaktayız.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 12 · DÖRT SAHNE ============ -->
+<section class="slide" id="sahneler" data-title="Türk ticaretinden dört sahne" data-target="9:30">
+  <div class="row" style="justify-content:space-between;align-items:flex-end">
+    <div>
+      <div class="eyebrow" data-a="left">01 · Ticaret nasıl değişiyor?</div>
+      <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Türk ticaretinden dört sahne</h2>
+    </div>
+    <span class="pill" data-a="fade" style="--d:.5s">Senaryo · bugün ve 2028</span>
+  </div>
+  <div class="scenes mt-l">
+    <div class="scene step" data-order="1"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-ship"/></svg></span>İhracatçı</div>
+      <div class="ln"><b>Bugün</b><span>Almanca teklif için tercüman bekliyor; katalog tek dilde.</span></div>
+      <div class="ln now"><b>2028</b><span>Gelen talebe 10 dakikada, müşterinin kendi dilinde teklif, ürün föyü ve navlun hesabı.</span></div></div>
+    <div class="scene step" data-order="2"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-box"/></svg></span>Toptancı</div>
+      <div class="ln"><b>Bugün</b><span>Bayi siparişleri WhatsApp'tan, mesai saatinde, elle giriliyor.</span></div>
+      <div class="ln now"><b>2028</b><span>Bayinin ajanı gece 02.00'de stok soruyor, sipariş veriyor; sabah sevkiyat hazır.</span></div></div>
+    <div class="scene step" data-order="3"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-shop"/></svg></span>Perakendeci</div>
+      <div class="ln"><b>Bugün</b><span>Herkese aynı vitrin, aynı kampanya, aynı mesaj.</span></div>
+      <div class="ln now"><b>2028</b><span>Her müşteriye ayrı vitrin; sorulara 7/24, kendi dilinde cevap.</span></div></div>
+    <div class="scene step" data-order="4"><div class="who"><span class="ic"><svg viewBox="0 0 32 32"><use href="#i-factory"/></svg></span>Üretici KOBİ</div>
+      <div class="ln"><b>Bugün</b><span>Teklif, evrak ve gümrük ön hazırlığı günler sürüyor.</span></div>
+      <div class="ln now"><b>2028</b><span>Teknik çizimden teklife, evraktan gümrük ön beyanına: saatler.</span></div></div>
+  </div>
+  <div class="src nolabel">Senaryolar temsilîdir. Bugünden bir örnek: Trendyol, kendi dil modeliyle satıcılarının 10 dilde yurt dışı pazarlara açılabildiğini açıkladı (Erdem İnan, Ekim 2026).</div>
+  <aside class="notes"><ul>
+    <li>⏱ Bu slayt bittiğinde hedef: <b>9:30</b>.</li>
+    <li>Bunlar gerçek vaka değil; bugünkü araçlarla mümkün olan senaryolar. Her tıkta bir sahne.</li>
+    <li>Perakendecide asıl model değişikliği: kitleye değil, kişiye satmak.</li>
+    <li>"Bu salonda bu dört sahneden birini yaşamayan yok. Sizinki hangisi?"</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 13 · SINIRSIZ STAJYER ============ -->
+<section class="slide" id="stajyer" data-title="Her şirkete sınırsız stajyer">
+  <div class="eyebrow" data-a="left">02 · Şirketler nasıl değişiyor?</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Her şirkete <span class="hl">sınırsız stajyer</span></h2>
+  <div class="row mt-l" style="gap:36px;align-items:stretch">
+    <div class="card" data-a="up" style="--d:.3s;flex:1.25">
+      <div class="num">HARVARD × BCG DENEYİ · 758 DANIŞMAN</div>
+      <div class="small" style="margin-top:8px">Yapay zekânın güçlü olduğu işlerde</div>
+      <div class="row mt-m" style="gap:44px">
+        <div><div style="font:800 78px/1 var(--display)" class="sky">%<span data-count="12.2" data-dec="1" data-delay="400">12,2</span></div><p class="small mt-s">daha fazla iş</p></div>
+        <div><div style="font:800 78px/1 var(--display)" class="sky">%<span data-count="25.1" data-dec="1" data-delay="500">25,1</span></div><p class="small mt-s">daha hızlı</p></div>
+        <div><div style="font:800 78px/1 var(--display)" class="coral">%40+</div><p class="small mt-s">daha kaliteli</p></div>
+      </div>
+    </div>
+    <div class="card" data-a="up" style="--d:.45s;flex:1">
+      <div class="num">ÇAĞRI MERKEZİ · 5.172 TEMSİLCİ</div>
+      <div class="small" style="margin-top:8px">Yapay zekâ destekli asistanla</div>
+      <div class="row mt-m" style="gap:44px">
+        <div><div style="font:800 78px/1 var(--display)" class="sky">%<span data-count="15" data-delay="600">15</span></div><p class="small mt-s">ortalama verim artışı</p></div>
+        <div><div style="font:800 78px/1 var(--display)" class="coral">%<span data-count="30" data-delay="700">30</span>+</div><p class="small mt-s">yeni başlayanlarda</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-m step" data-order="1" style="gap:36px;align-items:center">
+    <div class="card" style="flex:1;border-color:rgba(239,91,91,.45);padding:30px 40px"><p style="font:600 30px/1.35 var(--text);color:var(--ink)">Ama stajyer yanılır. Yapay zekânın zayıf olduğu işlerde doğru sonuca ulaşma oranı <span class="coral">19 puan düştü.</span> Kontrol sizde.</p></div>
+    <div class="quote" style="flex:1.15">
+      <p class="serif" style="font-size:38px;line-height:1.15">“Her şirketin bilgi işlem departmanı, yapay zekâ ajanlarının <span class="coral">insan kaynakları</span> departmanı olacak.”</p>
+      <div class="who" style="margin-top:16px"><img src="assets/img/portre/jensen-huang.jpg" alt="" style="width:64px;height:64px"><div><div class="name" style="font-size:24px">Jensen Huang</div><div class="role" style="font-size:20px">NVIDIA CEO'su · Ocak 2025</div></div></div>
+    </div>
+  </div>
+  <div class="src">Dell'Acqua vd., Harvard Business School & BCG (2023) · Brynjolfsson, Li, Raymond, QJE (2025) · Benedict Evans · Fortune (9 Ocak 2025) · Portre: Anderseidesvik, CC BY-SA 4.0</div>
+  <aside class="notes"><ul>
+    <li>Benedict Evans'ın benzetmesi: yapay zekâ size sınırsız stajyer verir.</li>
+    <li>Harvard–BCG: %12 daha çok iş, %25 daha hızlı, %40'tan fazla daha kaliteli. Çağrı merkezinde ortalama %15; en çok kazanan <b>yeni başlayanlar</b> (%30'un üzeri).</li>
+    <li>(tık) Ama stajyer yanılır; zayıf olduğu işte doğruluk düştü. Kontrol ve sorumluluk insanda.</li>
+    <li>Jensen Huang: ajanları işe almak, eğitmek, denetlemek gerekecek; yani İK gibi yönetmek. (Microsoft'a göre üç evre: asistan → dijital meslektaş → "insan yönetir, ajan yürütür".)</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 14 · GERÇEKLİK ============ -->
+<section class="slide" id="gerceklik" data-title="Çoğu deniyor, azı kazanıyor">
+  <div class="eyebrow" data-a="left">Gerçeklik kontrolü</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Çoğu deniyor, <span class="coral">azı kazanıyor</span></h2>
+  <p class="body mt-s" data-a="up" style="--d:.25s">Dünyada 4.454 CEO, son 12 ayda yapay zekâdan ne kazandı?</p>
+  <div class="row mt-m" style="gap:100px;align-items:center">
+    <div class="waffle" data-waffle="12:c3,32:c2,56:"></div>
+    <div class="legend" style="flex:1" data-stagger=".2" data-base=".8">
+      <div class="li" data-a="right"><span class="sw" style="background:rgba(243,241,235,.16)"></span><span class="pct muted">%56</span><span class="tx">ne gelir ne maliyet kazancı gördü</span></div>
+      <div class="li" data-a="right"><span class="sw" style="background:rgba(90,167,242,.85)"></span><span class="pct sky">%32</span><span class="tx">yalnızca birinde kazanç gördü (gelir ya da maliyet)</span></div>
+      <div class="li" data-a="right"><span class="sw" style="background:var(--coral)"></span><span class="pct coral">%12</span><span class="tx">ikisinde birden kazanç gördü</span></div>
+    </div>
+  </div>
+  <p class="serif mt-m step" data-order="1" style="font-size:36px;line-height:1.15;max-width:1640px">“Yapay zekâyı otomasyon için fazlasıyla kullanıyoruz; çalışanlara uzmanlık ve bilgi sağlamak için ise yeterince kullanmıyoruz.” <span class="small" style="font-family:var(--text);font-style:normal;white-space:nowrap">Daron Acemoğlu · MIT · 2024 Nobel Ekonomi Ödülü sahibi</span></p>
+  <div class="src">PwC 29. Küresel CEO Araştırması (Ocak 2026; 95 ülke, 4.454 CEO) · MIT News (6 Aralık 2024)</div>
+  <aside class="notes"><ul>
+    <li>Her 100 CEO'dan 56'sı son 12 ayda yapay zekâdan ne gelir ne maliyet kazancı görmüş. İkisini birden gören 12. (McKinsey de benzer: büyük kazanç sağlayan şirketler yaklaşık %6.)</li>
+    <li>Klarna örneği: yapay zekâ asistanı 700 kişinin işini yaptı dediler; kalite düşünce insan desteğini yeniden eklediler. Yapay zekâdan vazgeçmediler, dengeyi kurdular.</li>
+    <li>(tık) Türk asıllı Nobel sahibi Acemoğlu'nun uyarısı: yapay zekâyı sadece insanın yerine koymak için değil, insanı güçlendirmek için kullanın.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 15 · ELEKTRİK DERSİ ============ -->
+<section class="slide" id="elektrik" data-title="Elektrik dersi" data-target="12:00">
+  <div class="bgimg" data-bg="assets/img/fabrika-kayis-kasnak-2.jpg" style="left:auto;width:50%;background-color:#0F1E2C;filter:grayscale(1) contrast(1.05);-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%);opacity:.75" data-a="blur"></div>
+  <div class="content" style="max-width:980px">
+    <div class="eyebrow" data-a="left">Gerçeklik kontrolü · Tarihten bir ders</div>
+    <h2 class="h1 mt-m" data-a="up" style="--d:.1s;font-size:84px">Elektrik geldi.<br>Verim <span class="coral">40 yıl</span> sonra.</h2>
+    <div class="ladder compact mt-m" data-stagger=".3" data-base=".5">
+      <div class="rung" data-a="up"><div class="y">1880'ler</div><div class="t">İlk santraller ve elektrik motorları.</div></div>
+      <div class="rung" data-a="up"><div class="y">1900'ler</div><div class="t">Fabrikalar buhar makinesinin yerine tek büyük motor koyuyor; kayışlar ve yerleşim aynı kalıyor.</div></div>
+      <div class="rung" data-a="up"><div class="y">1919</div><div class="t">Fabrika gücünün yaklaşık yarısı elektrikli; verim hâlâ yerinde sayıyor.</div></div>
+      <div class="rung hot" data-a="up"><div class="y">1920'ler</div><div class="t">Her makineye kendi motoru, yeni akış düzeni. Fabrika <b>yeniden tasarlanınca</b> verim sıçrıyor.</div></div>
+    </div>
+    <p class="h3 mt-m step" data-order="1">Aleti değil, <span class="coral">işi</span> yeniden tasarlayın.</p>
+  </div>
+  <div class="src">Paul A. David, “The Dynamo and the Computer” (1990) · McKinsey, The State of AI (2025)</div>
+  <aside class="notes"><ul>
+    <li>⏱ Bu slayt bittiğinde hedef: <b>12:00</b>.</li>
+    <li>Andrew Ng "yapay zekâ yeni elektriktir" der. O hâlde elektrikten ders alalım.</li>
+    <li>Fabrikalar motoru değiştirdi ama düzeni değiştirmedi; verim gelmedi. Verim, fabrika baştan tasarlanınca geldi: yaklaşık 40 yıl sonra.</li>
+    <li>(tık) Bugün de aynı: yapay zekâyı eski sürecin üstüne eklemek yetmiyor. McKinsey'e göre kazananların iş akışını baştan tasarlamış olma ihtimali yaklaşık 3 kat yüksek.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 16 · MALİYET DUVARI ============ -->
+<section class="slide" id="hendek" data-title="Sizi koruyan maliyet duvarı yıkılıyor">
+  <div class="eyebrow" data-a="left">03 · Rekabet nasıl değişiyor?</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Sizi koruyan <span class="coral">maliyet duvarı</span> yıkılıyor</h2>
+  <p class="lead mt-s" data-a="up" style="--d:.25s;max-width:1400px">Dün sadece büyüklerin karşılayabildiği işler, bugün herkesin cebinde.</p>
+  <div class="costs mt-l">
+    <div class="cost" data-a="up" style="--d:.4s;--k:0"><span class="n">Çeviri ve 12 dilde katalog</span><span class="r"><span class="was">haftalar, ajans</span><span class="now">dakikalar</span></span></div>
+    <div class="cost" data-a="up" style="--d:.5s;--k:1"><span class="n">Ürün fotoğrafı ve tanıtım metni</span><span class="r"><span class="was">stüdyo, metin yazarı</span><span class="now">dakikalar</span></span></div>
+    <div class="cost" data-a="up" style="--d:.6s;--k:2"><span class="n">Teklif ve proforma hazırlığı</span><span class="r"><span class="was">günler</span><span class="now">saatler</span></span></div>
+    <div class="cost" data-a="up" style="--d:.7s;--k:3"><span class="n">7/24 müşteri hizmeti</span><span class="r"><span class="was">çağrı merkezi</span><span class="now">her dilde, her saat</span></span></div>
+    <div class="cost" data-a="up" style="--d:.8s;--k:4"><span class="n">Pazar ve rakip araştırması</span><span class="r"><span class="was">danışmanlık raporu</span><span class="now">bir öğleden sonra</span></span></div>
+    <div class="cost" data-a="up" style="--d:.9s;--k:5"><span class="n">Basit otomasyonlar</span><span class="r"><span class="was">yazılım ekibi</span><span class="now">tarif ederek</span></span></div>
+  </div>
+  <p class="h3 mt-l step" data-order="1">Küçük işletme, büyüklerle <span class="hl">aynı silahlarla</span> yarışabiliyor.</p>
+  <div class="src">Benedict Evans, AI eats the world (Mayıs 2026): “Was the cost of that task your moat?”</div>
+  <aside class="notes"><ul>
+    <li>Benedict Evans'ın sorusu: "O işin maliyeti, kalenizi koruyan hendek miydi?" İnternet dağıtım maliyetini sıfırlayınca gazete, müzik, perakende sarsıldı; çünkü o maliyet onları koruyordu.</li>
+    <li>Şimdi çeviri, katalog, teklif, müşteri hizmeti maliyeti sıfıra yaklaşıyor.</li>
+    <li>(tık) Bu duvar büyüklerin duvarıydı: küçük firma için tarihî fırsat, büyük firma için uyarı.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 17 · YAĞMUR ============ -->
+<section class="slide no-foot t-zoom" id="yagmur" data-title="Yağmur yağıyor: sıralama yeniden yazılıyor">
+  <div class="bgimg kb" data-bg="assets/img/yagmurda-yaris.jpg" style="background-color:#0F1E2C"></div>
+  <div class="shade left"></div>
+  <div class="content vcenter" style="max-width:1200px">
+    <div class="eyebrow" data-a="left">03 · Rekabet nasıl değişiyor?</div>
+    <p class="serif mt-m lines" style="--d:.3s;font-size:92px;line-height:1.05"><span>“Güneşli havada</span><span>15 aracı geçemezsiniz.</span><span class="coral">Yağmurda geçebilirsiniz.”</span></p>
+    <p class="small mt-m" data-a="up" style="--d:1.2s;font-size:24px">Yarışçıların eski bir sözü</p>
+    <p class="h2 mt-l step" data-order="1" style="font-size:56px">Liderlik kimse için garanti değil.<br><span class="coral">Küçükler için tarihî fırsat.</span></p>
+  </div>
+  <div class="ph-credit">Fotoğraf: Sinan Khan / Unsplash</div>
+  <aside class="notes"><ul>
+    <li>Kısa bir nefes. Yarışçılar bilir: kuru havada sıralama bellidir; yağmurda yeniden yazılır.</li>
+    <li>(tık) Şu an yağmur yağıyor. Büyük de küçük de aynı pistte.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 18 · TÜRKİYE ============ -->
+<section class="slide" id="turkiye" data-title="Türkiye: bireyler başladı, şirketler henüz değil">
+  <div class="eyebrow" data-a="left">03 · Türkiye nerede?</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s;font-size:78px">Bireyler başladı. <span class="coral">Şirketler henüz değil.</span></h2>
+  <div class="row mt-m" style="gap:90px;align-items:flex-end">
+    <div class="vbars" style="height:470px" data-stagger=".2" data-base=".4">
+      <div class="vbar" style="--h:75.2%"><span class="v">%<span data-count="37.6" data-dec="1" data-delay="400">37,6</span></span><span class="b"></span><span class="l">Bireyler<br><span class="small">Türkiye 2026</span></span></div>
+      <div class="vbar tr" style="--h:28%"><span class="v">%<span data-count="14" data-delay="600">14</span></span><span class="b"></span><span class="l">Şirketler<br><span class="small">Türkiye 2026</span></span></div>
+      <div class="vbar tr" style="--h:25.4%"><span class="v">%<span data-count="12.7" data-dec="1" data-delay="800">12,7</span></span><span class="b"></span><span class="l">Toptan ve<br>perakende</span></div>
+      <div class="vbar" style="--h:40%;opacity:.75"><span class="v">%<span data-count="20" data-delay="1000">20</span></span><span class="b"></span><span class="l">Şirketler<br><span class="small">AB ort. 2025</span></span></div>
+    </div>
+    <div class="col gap-s" style="flex:1;padding-bottom:30px">
+      <div class="card step" data-order="1" style="padding:32px 38px"><div class="num">EN SIK ENGEL</div><div style="font:800 66px/1 var(--display);margin-top:12px" class="coral">%72</div><p class="mt-s">Kullanmayı düşünüp kullanamayan şirketlerin engeli: <b>uzmanlık eksikliği</b>.</p></div>
+      <div class="card step" data-order="2" style="padding:32px 38px"><div class="num">AMA BAŞLAYAN KAZANIYOR</div><div style="font:800 66px/1 var(--display);margin-top:12px" class="sky">%21 <span style="font-size:.4em;color:var(--muted)">/ dünya %12</span></div><p class="mt-s">Türkiye'de yapay zekâdan hem gelir hem maliyet kazancı gören CEO oranı.</p></div>
+    </div>
+  </div>
+  <div class="src">TÜİK, Yapay Zekâ İstatistikleri 2026 (Ekim 2026) · Eurostat (Aralık 2025) · PwC 29. Küresel CEO Araştırması, Türkiye sonuçları (2026)</div>
+  <aside class="notes"><ul>
+    <li>Bireylerde %37,6; şirketlerde %14. Toptan ve perakendede %12,7. AB ortalaması %20.</li>
+    <li>(tık) Engel para değil, <b>bilgi</b>: kullanmayı düşünüp kullanamayan şirketlerin %72'si "uzmanlığımız yok" diyor. (Sonra hukuki belirsizlik ve veri gizliliği geliyor.)</li>
+    <li>(tık) Ama başlayanlar kazanıyor: Türkiye'de CEO'ların %21'i hem gelir hem maliyet kazancı görmüş. Dürüst not: 84 CEO'luk bir örneklem; PwC de temkinli okunmasını öneriyor. Pencere açık.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 19 · PAZARTESİ ============ -->
+<section class="slide" id="pazartesi" data-title="Pazartesi sabahı için 5 adım" data-target="15:00">
+  <div class="eyebrow" data-a="left">04 · Ne yapmalı?</div>
+  <h2 class="h1 mt-m" data-a="up" style="--d:.1s">Pazartesi sabahı için <span class="coral">5 adım</span></h2>
+  <div class="steps5 mt-m">
+    <div class="s5 step" data-order="1"><span class="n">1</span><span class="t">Önce siz kullanın<small>Her gün, kendi işinizde. Liderin kullanmadığı araç şirkete yayılmaz.</small></span></div>
+    <div class="s5 step" data-order="2"><span class="n">2</span><span class="t">Tek bir dert seçin, 90 günde ölçün<small>Teklif süresi, cevap süresi, stok hatası… Önce küçük bir zafer.</small></span></div>
+    <div class="s5 step" data-order="3"><span class="n">3</span><span class="t">Verinizi toparlayın<small>Katalog, fiyat, stok, müşteri geçmişi: düzenli ve KVKK'ya uygun. Yapay zekânın yakıtı bu.</small></span></div>
+    <div class="s5 step" data-order="4"><span class="n">4</span><span class="t">Ekibinizi eğitin ve cesaretlendirin<small>En sık engel uzmanlık eksikliği. Deneyeni ödüllendirin.</small></span></div>
+    <div class="s5 step" data-order="5"><span class="n">5</span><span class="t">Ürününüzü ajanlara görünür kılın<small>Düzenli katalog, güncel fiyat, açık koşullar, birden çok dil.</small></span></div>
+  </div>
+  <p class="serif mt-m step" data-order="6" style="font-size:40px">“Tırmanmıyorsanız kayıyorsunuz.” <span class="small" style="font-family:var(--text);font-style:normal">Tobi Lütke · Shopify CEO'su, çalışanlarına yazdığı not (Nisan 2025)</span></p>
+  <div class="src">Andrew Ng, AI Transformation Playbook (strateji 4. adımdır; önce pilot) · Shopify iç yazısı (Nisan 2025)</div>
+  <aside class="notes"><ul>
+    <li>⏱ Bu slayt bittiğinde hedef: <b>15:00</b>. Her tık bir adım; kısa geçin.</li>
+    <li>2: Andrew Ng'nin dönüşüm rehberinde strateji 4. adım; önce küçük, ölçülebilir bir başarı.</li>
+    <li>3: Veri gizliliği ilk günden planlanır: müşteri verisini hangi araca verdiğinizi bilin, KVKK'ya uygun olsun.</li>
+    <li>(son tık) Lütke Shopify'da kural koydu: ek personel istemeden önce "bunu yapay zekâ neden yapamıyor?" sorusunu cevaplayın.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 20 · GÜVEN ============ -->
+<section class="slide" id="guven" data-title="Değişmeyecek olan: güven">
+  <div class="bgimg" data-bg="assets/img/kapalicarsi.jpg" style="opacity:.22;filter:grayscale(.6)" data-a="fade"></div>
+  <div class="shade full" style="background:linear-gradient(90deg,rgba(11,22,33,.92),rgba(11,22,33,.7))"></div>
+  <div class="content">
+    <div class="eyebrow" data-a="left">Değişmeyen</div>
+    <div class="grow col vcenter">
+      <div class="quote" style="max-width:1560px">
+        <span class="mark" data-a="scale"><svg><use href="#i-quote"/></svg></span>
+        <blockquote class="lines" style="--d:.3s;font-size:78px"><span>Bana hep “10 yılda ne değişecek?” diye sorulur.</span><span><span class="coral">“Ne değişmeyecek?”</span> diye neredeyse hiç sorulmaz.</span></blockquote>
+        <div class="who" data-a="up" style="--d:1.1s"><img src="assets/img/portre/jeff-bezos.jpg" alt=""><div><div class="name">Jeff Bezos</div><div class="role">Amazon kurucusu · 2012</div></div></div>
+      </div>
+      <div class="row mt-l step" data-order="1" style="gap:60px;align-items:center">
+        <div class="h2" style="font-size:68px;white-space:nowrap">Bizim cevabımız: <span class="coral">güven.</span></div>
+        <p class="lead" style="flex:1">Kültepe'de de, İstanbul'un çarşılarında da öyleydi. Ajanlar da <b>güvenilir satıcıyı</b> seçecek: teslim sözünüz, iade oranınız, yorumlarınız artık veri.</p>
+      </div>
+    </div>
+  </div>
+  <div class="src">AWS re:Invent 2012, Werner Vogels ile söyleşi · Portre: Steve Jurvetson, CC BY 2.0</div>
+  <aside class="notes"><ul>
+    <li>Bezos'un sorusu: neyin değişmeyeceğini bilirseniz stratejiyi onun üstüne kurarsınız. Onun cevabı: ucuz, hızlı, bol seçenek.</li>
+    <li>(tık) Bizim cevabımız: güven. Kültepe'deki tüccar da güven satıyordu. Değişen şu: güven artık <b>ölçülüyor</b>.</li>
+    <li>"Yeni bir dünya için" hız teknolojiden gelir; güven bizden.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 21 · KAPANIŞ: HANGİ FOTOĞRAF ============ -->
+<section class="slide no-foot t-fade" id="kapanis" data-title="Hangi fotoğrafta olacaksınız?">
+  <div class="bgimg" data-bg="assets/img/1913-kirpik.jpg" style="filter:grayscale(1) brightness(.55);background-position:center 60%"></div>
+  <div class="shade left"></div>
+  <div class="content vcenter" style="max-width:1300px">
+    <h2 class="h1 lines" style="--d:.3s;font-size:84px"><span>2030'da kimse “yapay zekâ</span><span>kullanıyoruz” demeyecek.</span></h2>
+    <p class="lead mt-m" data-a="up" style="--d:1s">Bugün kimsenin “elektrik kullanıyoruz” demediği gibi.</p>
+    <h2 class="h-xl mt-l step" data-order="1" data-s="blur" style="font-size:120px">Hangi fotoğrafta <span class="coral">olacaksınız?</span></h2>
+    <p class="serif mt-l step" data-order="2" style="font-size:44px;line-height:1.15;max-width:1250px;text-shadow:0 2px 20px rgba(0,0,0,.6)">“Tarihte hiç olmadığı kadar çok tüccar ve girişimcinin doğabileceği bir döneme giriyoruz.”<span class="small" style="display:block;font-family:var(--text);font-style:normal;margin-top:10px;font-size:24px;color:var(--ink-2)">Tobi Lütke · Shopify CEO'su, Nisan 2025</span></p>
+  </div>
+  <div class="src">Tobi Lütke, Shopify iç yazısı (Nisan 2025)</div>
+  <aside class="notes"><ul>
+    <li>Otomasyon işe yarayınca görünmez olur. 2030'da yapay zekâ da elektrik gibi sıradanlaşacak.</li>
+    <li>(tık) Açılıştaki fotoğrafa dönün: "Atlı arabada mı, otomobilde mi?"</li>
+    <li>(tık) Umutla bitirin: bu çağ, tüccarın çağı. Kültepe'den bu yana olduğu gibi.</li>
+  </ul></aside>
+</section>
+
+<!-- ============ 22 · TEŞEKKÜRLER ============ -->
+<section class="slide no-foot" id="tesekkur" data-title="Teşekkürler · Soru-Cevap" data-target="17:30">
+  <canvas class="globe" data-size="960" style="position:absolute;right:-300px;top:60px;" data-a="blur"></canvas>
+  <div class="grow col vcenter">
+    <div class="thanks lines" style="--d:.2s;font-size:190px"><span>Teşekkürler.</span></div>
+    <p class="h2 mt-m muted" data-a="up" style="--d:.7s">Sorularınızı alabilirim.</p>
+  </div>
+  <div class="row" style="align-items:flex-end;justify-content:space-between;--d:1s" data-a="up">
+    <div>
+      <div class="h3" style="font-size:46px">Halil Aydın</div>
+      <div class="small mt-s" style="font-size:24px">BSS Teknoloji CEO'su · YENİAD Başkan Yardımcısı</div>
+    </div>
+    <div class="logos">
+      <img class="logo-yeniad" src="assets/logo/yeniad-logo-beyaz.svg" alt="YENİAD">
+      <span class="sep"></span>
+      <img class="logo-bss" src="assets/logo/bss-logo-white.svg" alt="BSS Technology">
+    </div>
+  </div>
+  <aside class="notes"><ul>
+    <li>⏱ Hedef: <b>17:30</b>. Teşekkür, soru-cevap. Süre kalırsa: "Sizin işinizde ilk dokunulacak dert hangisi?"</li>
+    <li><b>"Verimiz nereye gidiyor? (KVKK)"</b> → Kurumsal sürümler ve veri işleme sözleşmeleriyle çalışın; müşteri verisini gereksiz yere araçlara vermeyin, anonimleştirin. Uyum ilk günden planlanır.</li>
+    <li><b>"Yapay zekâ yanlış söylerse sorumlu kim?"</b> → Sorumluluk her zaman şirkette. Müşteriye ya da finansal karara giden her çıktı insan onayından geçmeli: stajyer kuralı.</li>
+    <li><b>"Küçük firma nereden başlasın, bütçesi ne?"</b> → Abonelikle kullanılan genel araçlarla, tek bir dertle başlayın; 90 gün ölçün, işe yarayanı büyütün.</li>
+    <li><b>"Yazılım tarif ederek yapılıyorsa uzmana ne gerek var?"</b> → Basit işleri herkes kendisi yapabilir; kritik sistemler, entegrasyon ve veri güvenliği hâlâ uzmanlık ister.</li>
+  </ul></aside>
+</section>
+
+</main>
+
+<div id="progress"></div>
+<div id="blackout"></div>
+<div id="hint"><kbd>F</kbd> tam ekran · <kbd>S</kbd> konuşmacı notları · <kbd>→</kbd> ileri · <kbd>B</kbd> karart</div>
+<script src="assets/slides.js"></script>
+<script src="assets/deck.js"></script>
+<script src="assets/bg.js"></script>
+</body>
+</html>
